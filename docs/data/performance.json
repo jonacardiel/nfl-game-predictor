@@ -1,0 +1,69 @@
+{
+  "generated": "2026-09-12T02:32:55.581605+00:00",
+  "backtest_by_season": [
+    {
+      "n_games": 256,
+      "win_accuracy": 0.59375,
+      "win_log_loss": 0.6709130562,
+      "n_ats_games": 246,
+      "ats_accuracy": 0.5081300813,
+      "season": 2019
+    },
+    {
+      "n_games": 256,
+      "win_accuracy": 0.62109375,
+      "win_log_loss": 0.6339592199,
+      "n_ats_games": 256,
+      "ats_accuracy": 0.48828125,
+      "season": 2020
+    },
+    {
+      "n_games": 272,
+      "win_accuracy": 0.6139705882,
+      "win_log_loss": 0.6592368271,
+      "n_ats_games": 268,
+      "ats_accuracy": 0.5149253731,
+      "season": 2021
+    },
+    {
+      "n_games": 271,
+      "win_accuracy": 0.6273062731,
+      "win_log_loss": 0.6429154084,
+      "n_ats_games": 261,
+      "ats_accuracy": 0.5172413793,
+      "season": 2022
+    },
+    {
+      "n_games": 272,
+      "win_accuracy": 0.625,
+      "win_log_loss": 0.6531007543,
+      "n_ats_games": 258,
+      "ats_accuracy": 0.476744186,
+      "season": 2023
+    },
+    {
+      "n_games": 272,
+      "win_accuracy": 0.6875,
+      "win_log_loss": 0.6139071655,
+      "n_ats_games": 268,
+      "ats_accuracy": 0.5298507463,
+      "season": 2024
+    },
+    {
+      "n_games": 272,
+      "win_accuracy": 0.5955882353,
+      "win_log_loss": 0.65530265,
+      "n_ats_games": 271,
+      "ats_accuracy": 0.4907749077,
+      "season": 2025
+    }
+  ],
+  "current_season": 2026,
+  "current_season_scorecard": {
+    "games_played": 2,
+    "straight_up_record": "0-2",
+    "straight_up_pct": 0.0,
+    "ats_record": "0-1-1",
+    "ats_pct": 0.0
+  }
+}

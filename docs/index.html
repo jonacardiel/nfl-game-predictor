@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL Game Predictor</title>
+<meta name="description" content="A logistic regression model that predicts NFL game outcomes and spreads, trained on 10 seasons of play-by-play data, updated automatically every week.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="NFL Game Predictor">
+<meta property="og:description" content="A logistic regression model that predicts NFL game outcomes and ATS picks, trained on 10 seasons of play-by-play data, updated automatically every week.">
+<meta property="og:url" content="https://jonacardiel.github.io/nfl-game-predictor/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="NFL Game Predictor">
+<meta name="twitter:description" content="A logistic regression model that predicts NFL game outcomes and ATS picks, trained on 10 seasons of play-by-play data, updated automatically every week.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="brand-mark">NFL</span>
+      <h1>Game Predictor</h1>
+    </div>
+    <p class="tagline">Logistic regression &middot; 10 seasons of EPA data &middot; recalculated every week</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="predictions">
+    <div class="console">
+      <div class="console-row">
+        <div class="field">
+          <label for="season-select">Season</label>
+          <select id="season-select"></select>
+        </div>
+        <div class="field">
+          <label for="week-select">Week</label>
+          <select id="week-select"></select>
+        </div>
+        <button id="run-btn" class="btn-run">
+          <span class="btn-label">Run Predictions</span>
+        </button>
+      </div>
+      <div id="console-status" class="console-status muted"></div>
+    </div>
+
+    <div id="loading-screen" class="loading-screen" hidden>
+      <div class="progress-track"></div>
+      <div class="loading-text">Running predictions&hellip;</div>
+    </div>
+
+    <div class="section-heading">
+      <h2 id="week-title"></h2>
+      <span id="last-updated" class="muted mono"></span>
+    </div>
+    <div id="games-list" class="games-list"></div>
+  </section>
+
+  <section id="scorecard">
+    <h2>This Season's Picks</h2>
+    <div id="scorecard-cards" class="scorecard-cards"></div>
+    <p id="scorecard-caveat" class="muted small-sample-note" hidden></p>
+  </section>
+
+  <section id="performance">
+    <h2>Backtest: Walk-Forward Accuracy by Season</h2>
+    <p class="muted">Each season is predicted using a model trained only on the seasons before it — no peeking.</p>
+    <div id="chart-container" class="chart-container"></div>
+    <div class="legend">
+      <span><i class="swatch win"></i> Straight-up win accuracy</span>
+      <span><i class="swatch ats"></i> Against-the-spread accuracy</span>
+      <span class="muted">— 50% line = a coin flip (an efficient betting market's expected ATS result)</span>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="how-grid">
+      <div class="how-card">
+        <h3>Features</h3>
+        <ul>
+          <li><strong>Offensive EPA/play</strong> — season-to-date, before the game being predicted</li>
+          <li><strong>Defensive EPA/play allowed</strong> — same, for the defense</li>
+          <li><strong>Pace</strong> — offensive plays per game</li>
+          <li><strong>Rest days</strong> — days since each team's last game</li>
+          <li><strong>Recent trade activity</strong> — trades in the 14 days before kickoff</li>
+        </ul>
+        <p class="muted">Every feature is computed using only data available strictly before the game — no leakage from the outcome being predicted. Early-season weeks blend toward the prior season's rate until enough current-season games exist.</p>
+      </div>
+      <div class="how-card">
+        <h3>Models</h3>
+        <ul>
+          <li><strong>Logistic regression</strong> — win probability</li>
+          <li><strong>Logistic regression</strong> — against-the-spread cover probability (spread included as a feature)</li>
+          <li><strong>Linear regression</strong> — predicted point margin, used to size the live ATS pick against the market spread</li>
+        </ul>
+        <p class="muted">Trained on 2,639 completed regular-season games across the 2016–2025 seasons. Evaluated with a season-by-season walk-forward backtest: each holdout season is scored using a model that has never seen it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="honest-results">
+    <h2>An Honest Note on Results</h2>
+    <div class="callout">
+      <p><strong>Straight-up win accuracy backtests at 59–69% per season.</strong> Against-the-spread accuracy backtests at <strong>~49–53%</strong> — essentially a coin flip. That's expected and correct: the closing spread already prices in almost everything this model knows, and a five-feature logistic regression has no business beating an efficient market.</p>
+      <p>Early in development, a sign error in the ATS label formula (using <code>-spread_line</code> instead of <code>spread_line</code>) produced a suspicious <strong>79.5%</strong> backtest accuracy. That number should have been an immediate red flag — no simple model beats Vegas by that margin — and tracing it down surfaced the bug. The lesson generalizes: an implausibly good result in a well-studied, efficient domain is usually a leak, not a breakthrough.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>Educational project — not affiliated with the NFL. Team names/logos are used for identification only. Not betting advice.</p>
+    <p><a href="https://github.com/jonacardiel/nfl-game-predictor" target="_blank" rel="noopener">Source on GitHub</a></p>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

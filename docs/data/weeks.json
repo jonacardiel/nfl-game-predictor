@@ -1,0 +1,78 @@
+{
+  "season": 2026,
+  "current_week": 1,
+  "weeks": [
+    {
+      "week": 1,
+      "status": "live"
+    },
+    {
+      "week": 2,
+      "status": "upcoming"
+    },
+    {
+      "week": 3,
+      "status": "upcoming"
+    },
+    {
+      "week": 4,
+      "status": "upcoming"
+    },
+    {
+      "week": 5,
+      "status": "upcoming"
+    },
+    {
+      "week": 6,
+      "status": "upcoming"
+    },
+    {
+      "week": 7,
+      "status": "upcoming"
+    },
+    {
+      "week": 8,
+      "status": "upcoming"
+    },
+    {
+      "week": 9,
+      "status": "upcoming"
+    },
+    {
+      "week": 10,
+      "status": "upcoming"
+    },
+    {
+      "week": 11,
+      "status": "upcoming"
+    },
+    {
+      "week": 12,
+      "status": "upcoming"
+    },
+    {
+      "week": 13,
+      "status": "upcoming"
+    },
+    {
+      "week": 14,
+      "status": "upcoming"
+    },
+    {
+      "week": 15,
+      "status": "upcoming"
+    },
+    {
+      "week": 16,
+      "status": "upcoming"
+    },
+    {
+      "week": 17,
+      "status": "upcoming"
+    },
+    {
+      "week": 18,
+      "status": "upcoming"
+    }
+  ]
+}
