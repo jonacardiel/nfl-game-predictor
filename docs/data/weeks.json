@@ -1,10 +1,10 @@
 {
   "season": 2026,
-  "current_week": 1,
+  "current_week": 2,
   "weeks": [
     {
       "week": 1,
-      "status": "live"
+      "status": "final"
     },
     {
       "week": 2,
