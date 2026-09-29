@@ -14,6 +14,11 @@
       "date": "2026-09-22",
       "spread_line": 3.0,
       "win_prob_home": 0.445
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.0,
+      "win_prob_home": 0.445
     }
   ],
   "2026_01_SF_LA": [
@@ -29,6 +34,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 3.5,
+      "win_prob_home": 0.694
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 3.5,
       "win_prob_home": 0.694
     }
@@ -48,6 +58,11 @@
       "date": "2026-09-22",
       "spread_line": 8.5,
       "win_prob_home": 0.835
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 8.5,
+      "win_prob_home": 0.835
     }
   ],
   "2026_01_NO_DET": [
@@ -63,6 +78,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 7.0,
+      "win_prob_home": 0.738
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 7.0,
       "win_prob_home": 0.738
     }
@@ -82,6 +102,11 @@
       "date": "2026-09-22",
       "spread_line": -3.0,
       "win_prob_home": 0.601
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.0,
+      "win_prob_home": 0.601
     }
   ],
   "2026_01_ATL_PIT": [
@@ -97,6 +122,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 6.5,
+      "win_prob_home": 0.587
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 6.5,
       "win_prob_home": 0.587
     }
@@ -116,6 +146,11 @@
       "date": "2026-09-22",
       "spread_line": 1.5,
       "win_prob_home": 0.512
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 1.5,
+      "win_prob_home": 0.512
     }
   ],
   "2026_01_BUF_HOU": [
@@ -131,6 +166,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -1.5,
+      "win_prob_home": 0.455
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -1.5,
       "win_prob_home": 0.455
     }
@@ -150,6 +190,11 @@
       "date": "2026-09-22",
       "spread_line": 3.5,
       "win_prob_home": 0.445
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.5,
+      "win_prob_home": 0.445
     }
   ],
   "2026_01_CHI_CAR": [
@@ -165,6 +210,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -3.0,
+      "win_prob_home": 0.334
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -3.0,
       "win_prob_home": 0.334
     }
@@ -184,6 +234,11 @@
       "date": "2026-09-22",
       "spread_line": 6.0,
       "win_prob_home": 0.706
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 6.0,
+      "win_prob_home": 0.706
     }
   ],
   "2026_01_ARI_LAC": [
@@ -199,6 +254,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 8.5,
+      "win_prob_home": 0.642
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 8.5,
       "win_prob_home": 0.642
     }
@@ -218,6 +278,11 @@
       "date": "2026-09-22",
       "spread_line": 1.5,
       "win_prob_home": 0.341
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 1.5,
+      "win_prob_home": 0.341
     }
   ],
   "2026_01_MIA_LV": [
@@ -233,6 +298,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 3.0,
+      "win_prob_home": 0.317
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 3.0,
       "win_prob_home": 0.317
     }
@@ -252,6 +322,11 @@
       "date": "2026-09-22",
       "spread_line": -3.0,
       "win_prob_home": 0.455
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.0,
+      "win_prob_home": 0.455
     }
   ],
   "2026_01_DEN_KC": [
@@ -267,6 +342,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 2.5,
+      "win_prob_home": 0.497
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 2.5,
       "win_prob_home": 0.497
     }
@@ -286,6 +366,11 @@
       "date": "2026-09-22",
       "spread_line": 5.5,
       "win_prob_home": 0.631
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 5.5,
+      "win_prob_home": 0.631
     }
   ],
   "2026_02_PIT_NE": [
@@ -301,6 +386,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 4.5,
+      "win_prob_home": 0.731
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 4.5,
       "win_prob_home": 0.731
     }
@@ -320,6 +410,11 @@
       "date": "2026-09-22",
       "spread_line": 4.5,
       "win_prob_home": 0.749
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 4.5,
+      "win_prob_home": 0.749
     }
   ],
   "2026_02_CLE_TB": [
@@ -335,6 +430,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 8.5,
+      "win_prob_home": 0.731
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 8.5,
       "win_prob_home": 0.731
     }
@@ -354,6 +454,11 @@
       "date": "2026-09-22",
       "spread_line": 3.0,
       "win_prob_home": 0.659
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.0,
+      "win_prob_home": 0.659
     }
   ],
   "2026_02_NO_BAL": [
@@ -369,6 +474,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 8.5,
+      "win_prob_home": 0.741
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 8.5,
       "win_prob_home": 0.741
     }
@@ -388,6 +498,11 @@
       "date": "2026-09-22",
       "spread_line": -2.5,
       "win_prob_home": 0.566
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -2.5,
+      "win_prob_home": 0.566
     }
   ],
   "2026_02_PHI_TEN": [
@@ -403,6 +518,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -7.0,
+      "win_prob_home": 0.213
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -7.0,
       "win_prob_home": 0.213
     }
@@ -422,6 +542,11 @@
       "date": "2026-09-22",
       "spread_line": -3.5,
       "win_prob_home": 0.309
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.5,
+      "win_prob_home": 0.309
     }
   ],
   "2026_02_LV_LAC": [
@@ -437,6 +562,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 6.5,
+      "win_prob_home": 0.711
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 6.5,
       "win_prob_home": 0.711
     }
@@ -456,6 +586,11 @@
       "date": "2026-09-22",
       "spread_line": 2.5,
       "win_prob_home": 0.34
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 2.5,
+      "win_prob_home": 0.34
     }
   ],
   "2026_02_MIA_SF": [
@@ -471,6 +606,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 12.5,
+      "win_prob_home": 0.781
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 12.5,
       "win_prob_home": 0.781
     }
@@ -490,6 +630,11 @@
       "date": "2026-09-22",
       "spread_line": 3.5,
       "win_prob_home": 0.584
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.5,
+      "win_prob_home": 0.584
     }
   ],
   "2026_02_SEA_ARI": [
@@ -505,6 +650,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -3.5,
+      "win_prob_home": 0.412
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -3.5,
       "win_prob_home": 0.412
     }
@@ -524,6 +674,11 @@
       "date": "2026-09-22",
       "spread_line": 6.0,
       "win_prob_home": 0.698
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 6.0,
+      "win_prob_home": 0.698
     }
   ],
   "2026_02_NYG_LA": [
@@ -539,6 +694,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 6.5,
+      "win_prob_home": 0.595
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 6.5,
       "win_prob_home": 0.595
     }
@@ -558,6 +718,11 @@
       "date": "2026-09-22",
       "spread_line": 6.0,
       "win_prob_home": 0.726
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 4.5,
+      "win_prob_home": 0.726
     }
   ],
   "2026_03_NYJ_DET": [
@@ -574,6 +739,11 @@
     {
       "date": "2026-09-22",
       "spread_line": 6.5,
+      "win_prob_home": 0.765
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 7.0,
       "win_prob_home": 0.765
     }
   ],
@@ -592,6 +762,11 @@
       "date": "2026-09-22",
       "spread_line": 3.0,
       "win_prob_home": 0.644
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 2.5,
+      "win_prob_home": 0.644
     }
   ],
   "2026_03_LAC_BUF": [
@@ -607,6 +782,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 7.0,
+      "win_prob_home": 0.835
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 7.0,
       "win_prob_home": 0.835
     }
@@ -626,6 +806,11 @@
       "date": "2026-09-22",
       "spread_line": -3.5,
       "win_prob_home": 0.508
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.5,
+      "win_prob_home": 0.508
     }
   ],
   "2026_03_HOU_IND": [
@@ -643,6 +828,11 @@
       "date": "2026-09-22",
       "spread_line": -2.5,
       "win_prob_home": 0.538
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -1.5,
+      "win_prob_home": 0.538
     }
   ],
   "2026_03_NE_JAX": [
@@ -658,6 +848,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": 3.0,
+      "win_prob_home": 0.566
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": 3.0,
       "win_prob_home": 0.566
     }
@@ -677,6 +872,11 @@
       "date": "2026-09-22",
       "spread_line": -2.5,
       "win_prob_home": 0.36
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -2.5,
+      "win_prob_home": 0.36
     }
   ],
   "2026_03_KC_MIA": [
@@ -693,6 +893,11 @@
     {
       "date": "2026-09-22",
       "spread_line": -11.5,
+      "win_prob_home": 0.258
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -10.0,
       "win_prob_home": 0.258
     }
   ],
@@ -711,6 +916,11 @@
       "date": "2026-09-22",
       "spread_line": -7.0,
       "win_prob_home": 0.297
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -8.5,
+      "win_prob_home": 0.297
     }
   ],
   "2026_03_ARI_SF": [
@@ -728,6 +938,11 @@
       "date": "2026-09-22",
       "spread_line": 8.5,
       "win_prob_home": 0.782
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 7.5,
+      "win_prob_home": 0.782
     }
   ],
   "2026_03_MIN_TB": [
@@ -743,6 +958,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -1.5,
+      "win_prob_home": 0.525
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -1.5,
       "win_prob_home": 0.525
     }
@@ -762,6 +982,11 @@
       "date": "2026-09-22",
       "spread_line": 3.0,
       "win_prob_home": 0.71
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.5,
+      "win_prob_home": 0.71
     }
   ],
   "2026_03_BAL_DAL": [
@@ -777,6 +1002,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -3.0,
+      "win_prob_home": 0.45
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -3.0,
       "win_prob_home": 0.45
     }
@@ -796,6 +1026,11 @@
       "date": "2026-09-22",
       "spread_line": -2.5,
       "win_prob_home": 0.422
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 1.5,
+      "win_prob_home": 0.422
     }
   ],
   "2026_03_PHI_CHI": [
@@ -811,6 +1046,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": -3.5,
+      "win_prob_home": 0.591
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": -3.5,
       "win_prob_home": 0.591
     }
@@ -830,6 +1070,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.502
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -2.5,
+      "win_prob_home": 0.499
     }
   ],
   "2026_04_IND_WAS": [
@@ -847,6 +1092,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.47
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.5,
+      "win_prob_home": 0.472
     }
   ],
   "2026_04_NYJ_CHI": [
@@ -864,6 +1114,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.733
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.5,
+      "win_prob_home": 0.766
     }
   ],
   "2026_04_TEN_BAL": [
@@ -881,6 +1136,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.816
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 11.5,
+      "win_prob_home": 0.81
     }
   ],
   "2026_04_LA_PHI": [
@@ -898,6 +1158,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.451
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.0,
+      "win_prob_home": 0.401
     }
   ],
   "2026_04_NE_BUF": [
@@ -915,6 +1180,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.635
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 7.0,
+      "win_prob_home": 0.666
     }
   ],
   "2026_04_DAL_HOU": [
@@ -932,6 +1202,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.404
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 2.5,
+      "win_prob_home": 0.462
     }
   ],
   "2026_04_ARI_NYG": [
@@ -949,6 +1224,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.481
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -1.5,
+      "win_prob_home": 0.501
     }
   ],
   "2026_04_GB_TB": [
@@ -966,6 +1246,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.445
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -4.5,
+      "win_prob_home": 0.453
     }
   ],
   "2026_04_JAX_CIN": [
@@ -983,6 +1268,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.353
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 2.5,
+      "win_prob_home": 0.34
     }
   ],
   "2026_04_MIA_MIN": [
@@ -1000,6 +1290,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.67
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 11.5,
+      "win_prob_home": 0.656
     }
   ],
   "2026_04_DEN_SF": [
@@ -1017,6 +1312,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.77
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.0,
+      "win_prob_home": 0.741
     }
   ],
   "2026_04_LAC_SEA": [
@@ -1034,6 +1334,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.842
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 7.0,
+      "win_prob_home": 0.791
     }
   ],
   "2026_04_KC_LV": [
@@ -1051,6 +1356,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.263
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -4.5,
+      "win_prob_home": 0.27
     }
   ],
   "2026_04_DET_CAR": [
@@ -1068,6 +1378,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.46
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": -3.5,
+      "win_prob_home": 0.396
     }
   ],
   "2026_04_ATL_NO": [
@@ -1085,6 +1400,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.723
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": 3.0,
+      "win_prob_home": 0.574
     }
   ],
   "2026_05_TB_DAL": [
@@ -1102,6 +1422,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.7
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.684
     }
   ],
   "2026_05_PHI_JAX": [
@@ -1119,6 +1444,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.659
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.765
     }
   ],
   "2026_05_LV_NE": [
@@ -1136,6 +1466,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.786
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.698
     }
   ],
   "2026_05_MIN_NO": [
@@ -1153,6 +1488,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.551
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.575
     }
   ],
   "2026_05_CIN_MIA": [
@@ -1170,6 +1510,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.361
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.319
     }
   ],
   "2026_05_IND_PIT": [
@@ -1187,6 +1532,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.46
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.496
     }
   ],
   "2026_05_NYG_WAS": [
@@ -1204,6 +1554,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.537
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.527
     }
   ],
   "2026_05_CLE_NYJ": [
@@ -1221,6 +1576,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.633
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.562
     }
   ],
   "2026_05_HOU_TEN": [
@@ -1238,6 +1598,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.389
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.37
     }
   ],
   "2026_05_DEN_LAC": [
@@ -1255,6 +1620,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.402
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.432
     }
   ],
   "2026_05_CHI_GB": [
@@ -1272,6 +1642,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.348
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.341
     }
   ],
   "2026_05_SF_SEA": [
@@ -1289,6 +1664,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.47
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.424
     }
   ],
   "2026_05_DET_ARI": [
@@ -1306,6 +1686,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.361
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.348
     }
   ],
   "2026_05_BAL_ATL": [
@@ -1323,6 +1708,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.175
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.317
     }
   ],
   "2026_05_BUF_LA": [
@@ -1340,6 +1730,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.403
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.477
     }
   ],
   "2026_06_SEA_DEN": [
@@ -1357,6 +1752,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.295
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.381
     }
   ],
   "2026_06_HOU_JAX": [
@@ -1374,6 +1774,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.764
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.795
     }
   ],
   "2026_06_TEN_IND": [
@@ -1391,6 +1796,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.588
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.632
     }
   ],
   "2026_06_NYJ_NE": [
@@ -1408,6 +1818,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.703
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.624
     }
   ],
   "2026_06_CAR_PHI": [
@@ -1425,6 +1840,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.47
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.482
     }
   ],
   "2026_06_NO_NYG": [
@@ -1442,6 +1862,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.401
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.475
     }
   ],
   "2026_06_PIT_TB": [
@@ -1459,6 +1884,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.612
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.563
     }
   ],
   "2026_06_CHI_ATL": [
@@ -1476,6 +1906,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.179
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.306
     }
   ],
   "2026_06_BAL_CLE": [
@@ -1493,6 +1928,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.204
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.275
     }
   ],
   "2026_06_ARI_LA": [
@@ -1510,6 +1950,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.711
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.697
     }
   ],
   "2026_06_LAC_KC": [
@@ -1527,6 +1972,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.865
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.843
     }
   ],
   "2026_06_BUF_LV": [
@@ -1544,6 +1994,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.208
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.271
     }
   ],
   "2026_06_DAL_GB": [
@@ -1561,6 +2016,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.313
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.34
     }
   ],
   "2026_06_WAS_SF": [
@@ -1576,6 +2036,11 @@
     },
     {
       "date": "2026-09-22",
+      "spread_line": null,
+      "win_prob_home": 0.816
+    },
+    {
+      "date": "2026-09-29",
       "spread_line": null,
       "win_prob_home": 0.816
     }
@@ -1595,6 +2060,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.562
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.687
     }
   ],
   "2026_07_PIT_NO": [
@@ -1612,6 +2082,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.711
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.619
     }
   ],
   "2026_07_NYG_HOU": [
@@ -1629,6 +2104,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.557
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.581
     }
   ],
   "2026_07_CIN_BAL": [
@@ -1646,6 +2126,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.679
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.597
     }
   ],
   "2026_07_IND_MIN": [
@@ -1663,6 +2148,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.644
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.609
     }
   ],
   "2026_07_CLE_TEN": [
@@ -1680,6 +2170,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.528
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.477
     }
   ],
   "2026_07_TB_CAR": [
@@ -1697,6 +2192,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.724
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.663
     }
   ],
   "2026_07_MIA_NYJ": [
@@ -1714,6 +2214,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.628
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.6
     }
   ],
   "2026_07_SF_ATL": [
@@ -1731,6 +2236,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.085
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.168
     }
   ],
   "2026_07_DEN_ARI": [
@@ -1748,6 +2258,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.501
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.464
     }
   ],
   "2026_07_LA_LV": [
@@ -1765,6 +2280,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.357
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.363
     }
   ],
   "2026_07_GB_DET": [
@@ -1782,6 +2302,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.713
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.721
     }
   ],
   "2026_07_KC_SEA": [
@@ -1799,6 +2324,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.603
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.539
     }
   ],
   "2026_07_DAL_PHI": [
@@ -1816,6 +2346,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.423
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.391
     }
   ],
   "2026_08_CAR_GB": [
@@ -1833,6 +2368,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.336
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.414
     }
   ],
   "2026_08_BAL_BUF": [
@@ -1850,6 +2390,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.6
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.583
     }
   ],
   "2026_08_MIN_DET": [
@@ -1867,6 +2412,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.611
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.684
     }
   ],
   "2026_08_CLE_PIT": [
@@ -1884,6 +2434,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.533
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.526
     }
   ],
   "2026_08_IND_JAX": [
@@ -1901,6 +2456,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.8
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.84
     }
   ],
   "2026_08_TEN_CIN": [
@@ -1918,6 +2478,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.682
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.725
     }
   ],
   "2026_08_ARI_DAL": [
@@ -1935,6 +2500,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.654
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.605
     }
   ],
   "2026_08_LV_NYJ": [
@@ -1952,6 +2522,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.618
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.552
     }
   ],
   "2026_08_ATL_TB": [
@@ -1969,6 +2544,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.712
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.526
     }
   ],
   "2026_08_LAC_LA": [
@@ -1986,6 +2566,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.788
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.744
     }
   ],
   "2026_08_KC_DEN": [
@@ -2003,6 +2588,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.272
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.301
     }
   ],
   "2026_08_NE_MIA": [
@@ -2020,6 +2610,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.243
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.324
     }
   ],
   "2026_08_PHI_WAS": [
@@ -2037,6 +2632,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.437
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.524
     }
   ],
   "2026_08_CHI_SEA": [
@@ -2054,6 +2654,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.613
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.545
     }
   ],
   "2026_09_JAX_BAL": [
@@ -2071,6 +2676,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.531
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.428
     }
   ],
   "2026_09_CIN_ATL": [
@@ -2088,6 +2698,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.241
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.373
     }
   ],
   "2026_09_LA_WAS": [
@@ -2105,6 +2720,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.357
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.353
     }
   ],
   "2026_09_NYJ_KC": [
@@ -2122,6 +2742,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.729
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.761
     }
   ],
   "2026_09_CLE_NO": [
@@ -2139,6 +2764,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.72
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.648
     }
   ],
   "2026_09_DAL_IND": [
@@ -2156,6 +2786,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.241
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.297
     }
   ],
   "2026_09_NYG_PHI": [
@@ -2173,6 +2808,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.621
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.527
     }
   ],
   "2026_09_DEN_CAR": [
@@ -2190,6 +2830,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.707
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.593
     }
   ],
   "2026_09_DET_MIA": [
@@ -2207,6 +2852,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.233
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.213
     }
   ],
   "2026_09_LV_SF": [
@@ -2224,6 +2874,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.886
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.865
     }
   ],
   "2026_09_HOU_LAC": [
@@ -2241,6 +2896,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.357
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.402
     }
   ],
   "2026_09_ARI_SEA": [
@@ -2258,6 +2918,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.799
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.732
     }
   ],
   "2026_09_GB_NE": [
@@ -2275,6 +2940,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.713
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.574
     }
   ],
   "2026_09_TB_CHI": [
@@ -2292,6 +2962,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.764
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.788
     }
   ],
   "2026_09_BUF_MIN": [
@@ -2309,6 +2984,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.263
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.299
     }
   ],
   "2026_10_WAS_NYG": [
@@ -2326,6 +3006,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.377
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.449
     }
   ],
   "2026_10_NE_DET": [
@@ -2343,6 +3028,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.514
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.653
     }
   ],
   "2026_10_MIN_GB": [
@@ -2360,6 +3050,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.429
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.479
     }
   ],
   "2026_10_MIA_IND": [
@@ -2377,6 +3072,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.553
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.596
     }
   ],
   "2026_10_CAR_NO": [
@@ -2394,6 +3094,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.396
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.464
     }
   ],
   "2026_10_KC_ATL": [
@@ -2411,6 +3116,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.111
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.227
     }
   ],
   "2026_10_HOU_CLE": [
@@ -2428,6 +3138,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.432
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.481
     }
   ],
   "2026_10_JAX_TEN": [
@@ -2445,6 +3160,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.216
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.176
     }
   ],
   "2026_10_BUF_NYJ": [
@@ -2462,6 +3182,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.257
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.289
     }
   ],
   "2026_10_LA_ARI": [
@@ -2479,6 +3204,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.365
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.357
     }
   ],
   "2026_10_SEA_LV": [
@@ -2496,6 +3226,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.28
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.35
     }
   ],
   "2026_10_SF_DAL": [
@@ -2513,6 +3248,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.256
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.233
     }
   ],
   "2026_10_PIT_CIN": [
@@ -2530,6 +3270,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.729
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.684
     }
   ],
   "2026_10_LAC_BAL": [
@@ -2547,6 +3292,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.879
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.818
     }
   ],
   "2026_11_IND_HOU": [
@@ -2564,6 +3314,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.524
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.567
     }
   ],
   "2026_11_NO_CHI": [
@@ -2581,6 +3336,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.674
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.737
     }
   ],
   "2026_11_TEN_DAL": [
@@ -2598,6 +3358,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.726
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.718
     }
   ],
   "2026_11_MIA_BUF": [
@@ -2615,6 +3380,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.867
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.841
     }
   ],
   "2026_11_ARI_KC": [
@@ -2632,6 +3402,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.771
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.764
     }
   ],
   "2026_11_TB_DET": [
@@ -2649,6 +3424,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.68
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.704
     }
   ],
   "2026_11_JAX_NYG": [
@@ -2666,6 +3446,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.208
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.201
     }
   ],
   "2026_11_BAL_CAR": [
@@ -2683,6 +3468,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.409
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.361
     }
   ],
   "2026_11_NYJ_LAC": [
@@ -2700,6 +3490,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.286
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.378
     }
   ],
   "2026_11_LV_DEN": [
@@ -2717,6 +3512,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.552
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.57
     }
   ],
   "2026_11_PIT_PHI": [
@@ -2734,6 +3534,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.798
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.665
     }
   ],
   "2026_11_MIN_SF": [
@@ -2751,6 +3556,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.839
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.857
     }
   ],
   "2026_11_CIN_WAS": [
@@ -2768,6 +3578,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.466
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.404
     }
   ],
   "2026_12_GB_LA": [
@@ -2785,6 +3600,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.74
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.725
     }
   ],
   "2026_12_CHI_DET": [
@@ -2802,6 +3622,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.41
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.433
     }
   ],
   "2026_12_PHI_DAL": [
@@ -2819,6 +3644,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.557
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.618
     }
   ],
   "2026_12_KC_BUF": [
@@ -2836,6 +3666,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.55
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.472
     }
   ],
   "2026_12_DEN_PIT": [
@@ -2853,6 +3688,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.419
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.424
     }
   ],
   "2026_12_LV_CLE": [
@@ -2870,6 +3710,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.449
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.5
     }
   ],
   "2026_12_NYG_IND": [
@@ -2887,6 +3732,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.477
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.488
     }
   ],
   "2026_12_NYJ_MIA": [
@@ -2904,6 +3754,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.284
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.297
     }
   ],
   "2026_12_BAL_HOU": [
@@ -2921,6 +3776,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.227
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.298
     }
   ],
   "2026_12_NO_CIN": [
@@ -2938,6 +3798,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.547
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.619
     }
   ],
   "2026_12_ATL_MIN": [
@@ -2955,6 +3820,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.827
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.591
     }
   ],
   "2026_12_TEN_JAX": [
@@ -2972,6 +3842,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.808
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.866
     }
   ],
   "2026_12_SEA_SF": [
@@ -2989,6 +3864,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.633
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.673
     }
   ],
   "2026_12_WAS_ARI": [
@@ -3006,6 +3886,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.471
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.491
     }
   ],
   "2026_12_NE_LAC": [
@@ -3023,6 +3908,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.213
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.376
     }
   ],
   "2026_12_CAR_TB": [
@@ -3040,6 +3930,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.251
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.363
     }
   ],
   "2026_13_KC_LA": [
@@ -3057,6 +3952,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.4
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.393
     }
   ],
   "2026_13_JAX_CHI": [
@@ -3074,6 +3974,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.453
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.426
     }
   ],
   "2026_13_LAC_TB": [
@@ -3091,6 +3996,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.624
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.571
     }
   ],
   "2026_13_CIN_CLE": [
@@ -3108,6 +4018,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.336
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.348
     }
   ],
   "2026_13_DET_ATL": [
@@ -3125,6 +4040,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.149
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.289
     }
   ],
   "2026_13_WAS_TEN": [
@@ -3142,6 +4062,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.376
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.396
     }
   ],
   "2026_13_GB_NO": [
@@ -3159,6 +4084,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.631
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.575
     }
   ],
   "2026_13_SF_NYG": [
@@ -3176,6 +4106,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.096
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.116
     }
   ],
   "2026_13_MIA_DEN": [
@@ -3193,6 +4128,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.626
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.683
     }
   ],
   "2026_13_PHI_ARI": [
@@ -3210,6 +4150,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.385
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.477
     }
   ],
   "2026_13_CAR_MIN": [
@@ -3227,6 +4172,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.415
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.476
     }
   ],
   "2026_13_BUF_NE": [
@@ -3244,6 +4194,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.287
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.25
     }
   ],
   "2026_13_HOU_PIT": [
@@ -3261,6 +4216,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.436
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.456
     }
   ],
   "2026_13_DAL_SEA": [
@@ -3278,6 +4238,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.6
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.571
     }
   ],
   "2026_14_MIN_NE": [
@@ -3295,6 +4260,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.608
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.525
     }
   ],
   "2026_14_TEN_DET": [
@@ -3312,6 +4282,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.675
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.722
     }
   ],
   "2026_14_TB_BAL": [
@@ -3329,6 +4304,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.86
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.832
     }
   ],
   "2026_14_NO_CAR": [
@@ -3346,6 +4326,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.635
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.578
     }
   ],
   "2026_14_ATL_CLE": [
@@ -3363,6 +4348,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.717
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.55
     }
   ],
   "2026_14_IND_PHI": [
@@ -3380,6 +4370,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.615
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.524
     }
   ],
   "2026_14_HOU_WAS": [
@@ -3397,6 +4392,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.562
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.529
     }
   ],
   "2026_14_CHI_MIA": [
@@ -3414,6 +4414,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.173
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.163
     }
   ],
   "2026_14_DEN_NYJ": [
@@ -3431,6 +4436,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.695
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.603
     }
   ],
   "2026_14_LAC_LV": [
@@ -3448,6 +4458,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.791
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.74
     }
   ],
   "2026_14_LA_SF": [
@@ -3465,6 +4480,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.786
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.762
     }
   ],
   "2026_14_NYG_SEA": [
@@ -3482,6 +4502,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.837
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.776
     }
   ],
   "2026_14_KC_CIN": [
@@ -3499,6 +4524,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.322
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.346
     }
   ],
   "2026_14_BUF_GB": [
@@ -3516,6 +4546,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.148
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.2
     }
   ],
   "2026_14_PIT_JAX": [
@@ -3533,6 +4568,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.88
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.875
     }
   ],
   "2026_15_SF_LAC": [
@@ -3550,6 +4590,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.064
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.088
     }
   ],
   "2026_15_SEA_PHI": [
@@ -3567,6 +4612,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.312
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.301
     }
   ],
   "2026_15_CHI_BUF": [
@@ -3584,6 +4634,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.614
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.532
     }
   ],
   "2026_15_MIA_GB": [
@@ -3601,6 +4656,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.585
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.59
     }
   ],
   "2026_15_CLE_NYG": [
@@ -3618,6 +4678,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.507
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.5
     }
   ],
   "2026_15_NO_TB": [
@@ -3635,6 +4700,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.344
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.408
     }
   ],
   "2026_15_JAX_HOU": [
@@ -3652,6 +4722,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.225
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.212
     }
   ],
   "2026_15_CIN_CAR": [
@@ -3669,6 +4744,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.641
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.47
     }
   ],
   "2026_15_BAL_PIT": [
@@ -3686,6 +4766,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.142
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.197
     }
   ],
   "2026_15_ATL_WAS": [
@@ -3703,6 +4788,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.806
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.583
     }
   ],
   "2026_15_IND_TEN": [
@@ -3720,6 +4810,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.481
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.472
     }
   ],
   "2026_15_NYJ_ARI": [
@@ -3737,6 +4832,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.47
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.49
     }
   ],
   "2026_15_DEN_LV": [
@@ -3754,6 +4854,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.625
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.59
     }
   ],
   "2026_15_DAL_LA": [
@@ -3771,6 +4876,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.402
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.448
     }
   ],
   "2026_15_DET_MIN": [
@@ -3788,6 +4898,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.481
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.404
     }
   ],
   "2026_15_NE_KC": [
@@ -3805,6 +4920,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.68
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.793
     }
   ],
   "2026_16_HOU_PHI": [
@@ -3822,6 +4942,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.662
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.542
     }
   ],
   "2026_16_GB_CHI": [
@@ -3839,6 +4964,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.772
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.785
     }
   ],
   "2026_16_BUF_DEN": [
@@ -3856,6 +4986,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.149
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.246
     }
   ],
   "2026_16_LA_SEA": [
@@ -3873,6 +5008,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.715
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.64
     }
   ],
   "2026_16_CLE_BAL": [
@@ -3890,6 +5030,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.844
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.771
     }
   ],
   "2026_16_CIN_IND": [
@@ -3907,6 +5052,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.324
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.291
     }
   ],
   "2026_16_CAR_PIT": [
@@ -3924,6 +5074,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.192
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.32
     }
   ],
   "2026_16_NE_NYJ": [
@@ -3941,6 +5096,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.536
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.605
     }
   ],
   "2026_16_ARI_NO": [
@@ -3958,6 +5118,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.577
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.507
     }
   ],
   "2026_16_WAS_MIN": [
@@ -3975,6 +5140,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.562
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.538
     }
   ],
   "2026_16_TB_ATL": [
@@ -3992,6 +5162,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.333
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.573
     }
   ],
   "2026_16_LAC_MIA": [
@@ -4009,6 +5184,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.534
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.438
     }
   ],
   "2026_16_TEN_LV": [
@@ -4026,6 +5206,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.635
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.669
     }
   ],
   "2026_16_SF_KC": [
@@ -4043,6 +5228,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.314
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.333
     }
   ],
   "2026_16_JAX_DAL": [
@@ -4060,6 +5250,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.401
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.303
     }
   ],
   "2026_16_NYG_DET": [
@@ -4077,6 +5272,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.669
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.678
     }
   ],
   "2026_17_BAL_CIN": [
@@ -4094,6 +5294,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.324
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.402
     }
   ],
   "2026_17_LA_TB": [
@@ -4111,6 +5316,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.277
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.293
     }
   ],
   "2026_17_WAS_JAX": [
@@ -4128,6 +5338,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.72
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.806
     }
   ],
   "2026_17_NO_ATL": [
@@ -4145,6 +5360,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.185
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.426
     }
   ],
   "2026_17_NYG_DAL": [
@@ -4162,6 +5382,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.725
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.676
     }
   ],
   "2026_17_KC_LAC": [
@@ -4179,6 +5404,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.116
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.153
     }
   ],
   "2026_17_MIN_NYJ": [
@@ -4196,6 +5426,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.573
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.582
     }
   ],
   "2026_17_IND_CLE": [
@@ -4213,6 +5448,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.452
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.533
     }
   ],
   "2026_17_PIT_TEN": [
@@ -4230,6 +5470,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.649
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.545
     }
   ],
   "2026_17_BUF_MIA": [
@@ -4247,6 +5492,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.089
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.125
     }
   ],
   "2026_17_DEN_NE": [
@@ -4264,6 +5514,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.691
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.493
     }
   ],
   "2026_17_SEA_CAR": [
@@ -4281,6 +5536,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.403
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.376
     }
   ],
   "2026_17_LV_ARI": [
@@ -4298,6 +5558,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.503
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.467
     }
   ],
   "2026_17_DET_CHI": [
@@ -4315,6 +5580,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.569
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.582
     }
   ],
   "2026_17_PHI_SF": [
@@ -4332,6 +5602,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.817
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.858
     }
   ],
   "2026_17_HOU_GB": [
@@ -4349,6 +5624,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.485
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.441
     }
   ],
   "2026_18_NYJ_BUF": [
@@ -4366,6 +5646,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.725
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.681
     }
   ],
   "2026_18_LV_KC": [
@@ -4383,6 +5668,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.771
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.764
     }
   ],
   "2026_18_TEN_HOU": [
@@ -4400,6 +5690,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.49
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.569
     }
   ],
   "2026_18_CLE_CIN": [
@@ -4417,6 +5712,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.74
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.717
     }
   ],
   "2026_18_LAC_DEN": [
@@ -4434,6 +5734,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.679
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.646
     }
   ],
   "2026_18_PIT_BAL": [
@@ -4451,6 +5756,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.903
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.831
     }
   ],
   "2026_18_JAX_IND": [
@@ -4468,6 +5778,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.169
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.147
     }
   ],
   "2026_18_TB_NO": [
@@ -4485,6 +5800,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.685
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.648
     }
   ],
   "2026_18_DET_GB": [
@@ -4502,6 +5822,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.285
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.254
     }
   ],
   "2026_18_ATL_CAR": [
@@ -4519,6 +5844,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.913
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.685
     }
   ],
   "2026_18_PHI_NYG": [
@@ -4536,6 +5866,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.289
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.441
     }
   ],
   "2026_18_DAL_WAS": [
@@ -4553,6 +5888,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.279
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.317
     }
   ],
   "2026_18_CHI_MIN": [
@@ -4570,6 +5910,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.395
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.337
     }
   ],
   "2026_18_MIA_NE": [
@@ -4587,6 +5932,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.772
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.655
     }
   ],
   "2026_18_SF_ARI": [
@@ -4604,6 +5954,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.127
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.124
     }
   ],
   "2026_18_SEA_LA": [
@@ -4621,6 +5976,11 @@
       "date": "2026-09-22",
       "spread_line": null,
       "win_prob_home": 0.361
+    },
+    {
+      "date": "2026-09-29",
+      "spread_line": null,
+      "win_prob_home": 0.439
     }
   ]
 }
