@@ -63,8 +63,16 @@ def _merge_team_week(off: pd.DataFrame, de: pd.DataFrame, schedules: pd.DataFram
 
 
 def _add_cumulative_before(tw: pd.DataFrame) -> pd.DataFrame:
+    tw = tw.copy()
+    # Count only weeks that actually have recorded plays as "played" — the full
+    # season grid (see _full_team_week_grid) includes rows for weeks that haven't
+    # happened yet, which must NOT count toward "games played" for a team that's
+    # mid-season, or every not-yet-played future week inflates this count and
+    # dilutes pace_ytd / over-trusts the current season's shrinkage weight.
+    tw["_played"] = ((tw["off_plays"] > 0) | (tw["def_plays"] > 0)).astype(int)
+
     grp = tw.groupby(["season", "team"])
-    games_before = grp.cumcount()
+    games_before = grp["_played"].cumsum() - tw["_played"]
     off_sum_before = grp["off_epa_sum"].cumsum() - tw["off_epa_sum"]
     off_plays_before = grp["off_plays"].cumsum() - tw["off_plays"]
     def_sum_before = grp["def_epa_sum"].cumsum() - tw["def_epa_sum"]
@@ -74,12 +82,16 @@ def _add_cumulative_before(tw: pd.DataFrame) -> pd.DataFrame:
     tw["off_epa_play_ytd"] = off_sum_before / off_plays_before.replace(0, np.nan)
     tw["def_epa_play_ytd"] = def_sum_before / def_plays_before.replace(0, np.nan)
     tw["pace_ytd"] = off_plays_before / games_before.replace(0, np.nan)
-    return tw
+    return tw.drop(columns=["_played"])
 
 
 def _season_final_stats(tw: pd.DataFrame) -> pd.DataFrame:
+    # Only rows with recorded plays count toward a season's totals — otherwise an
+    # in-progress season's still-unplayed future weeks would dilute "games" and
+    # understate the per-game rate once this season gets used as next year's prior.
+    played = tw[(tw["off_plays"] > 0) | (tw["def_plays"] > 0)]
     season_totals = (
-        tw.groupby(["season", "team"])
+        played.groupby(["season", "team"])
         .agg(
             off_epa_sum=("off_epa_sum", "sum"),
             off_plays=("off_plays", "sum"),
