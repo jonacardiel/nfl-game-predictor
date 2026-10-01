@@ -88,7 +88,7 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 .field { display: flex; flex-direction: column; gap: 6px; }
 .field label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-secondary);
@@ -109,7 +109,8 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;
 }
-.field select:focus { outline: none; border-color: var(--accent-cyan); }
+.field select:focus { border-color: var(--accent-cyan); }
+.field select:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
 
 .btn-run {
   font-family: var(--font-mono);
@@ -124,6 +125,8 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
   cursor: pointer;
 }
 .btn-run:hover { background: #b8ff33; }
+.btn-run:active { background: #8fd900; transform: scale(0.97); }
+.btn-run:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
 .btn-run:disabled { opacity: 0.5; cursor: default; }
 
 .console-status { margin-top: 10px; font-family: var(--font-mono); font-size: 0.78rem; min-height: 1em; color: var(--accent-magenta); }
@@ -168,30 +171,44 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 }
 
 /* Game cards */
-.games-list { display: flex; flex-direction: column; gap: 8px; }
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.games-list.is-refreshing { opacity: 0.45; pointer-events: none; transition: opacity 0.1s ease; }
 
 .game-card {
-  padding: 16px 18px;
+  padding: 14px 16px;
   transition: border-color 0.12s ease;
 }
 .game-card:hover { border-color: rgba(255, 255, 255, 0.18); }
 .game-card.is-final { opacity: 0.85; }
+.game-card.is-expanded { grid-column: 1 / -1; }
 
-.card-top { display: flex; align-items: center; gap: 14px; }
+/* Teams on the left, win-prob/ATS on the right, top-aligned so the win-prob
+   number sits horizontally level with the away-team row (the whole point of
+   the card). Kickoff time is a small standalone line above, out of the way
+   instead of competing with either column for space. */
+.card-top { display: flex; align-items: flex-start; gap: 14px; }
 
 .matchup-teams { flex: 1; min-width: 0; }
-.team-row { display: flex; align-items: center; gap: 10px; padding: 3px 0; }
-.team-logo { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; }
+.team-row { display: flex; align-items: stretch; gap: 10px; padding: 3px 0; }
+.team-color-bar { width: 3px; border-radius: 2px; flex-shrink: 0; }
+.team-logo { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; align-self: center; }
+.team-abbr, .team-score { align-self: center; }
 .team-abbr { font-weight: 600; font-size: 0.95rem; min-width: 38px; }
 .team-score { margin-left: auto; font-family: var(--font-mono); font-weight: 700; font-size: 1.02rem; }
 .team-row.is-loser { opacity: 0.5; }
 .team-row.is-loser .team-score { font-weight: 500; }
 
 .kickoff-tag {
+  display: block;
+  margin-bottom: 8px;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
 }
 
@@ -200,18 +217,24 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
   flex-direction: column;
   align-items: flex-end;
   gap: 6px;
-  min-width: 92px;
+  min-width: 0;
 }
 .win-prob {
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   line-height: 1;
 }
 .win-prob.value-lime { color: var(--accent-lime); }
 .win-prob.value-magenta { color: var(--accent-magenta); }
 .win-prob.value-cyan { color: var(--accent-cyan); }
-.win-prob-label { font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-secondary); }
+.win-prob-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
 
 .ats-line {
   font-family: var(--font-mono);
@@ -226,7 +249,7 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 
 .badge-inline {
   font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   padding: 1px 6px;
@@ -243,19 +266,21 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
   align-items: center;
   gap: 6px;
   width: 100%;
-  margin-top: 12px;
-  padding: 8px 0 0;
+  margin-top: 8px;
+  padding: 8px 0;
   border: none;
   border-top: 1px solid var(--border);
   background: none;
   cursor: pointer;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--text-secondary);
   user-select: none;
 }
 .expand-toggle:hover { color: var(--text-primary); }
+.expand-toggle:active { color: var(--accent-cyan); }
 .expand-toggle:focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 2px; }
 .expand-toggle .chevron { transition: transform 0.12s ease; font-size: 0.68rem; }
 .game-card.is-expanded .expand-toggle .chevron { transform: rotate(90deg); }
@@ -276,7 +301,7 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 }
 .detail-item .detail-label {
   font-family: var(--font-mono);
-  font-size: 0.63rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-secondary);
@@ -291,7 +316,7 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 .sparkline-block { margin-top: 6px; }
 .sparkline-block .detail-label {
   font-family: var(--font-mono);
-  font-size: 0.63rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: var(--text-secondary);
@@ -338,8 +363,7 @@ section h2 { font-size: 1.15rem; margin-bottom: 4px; letter-spacing: -0.01em; fo
 
 @media (max-width: 640px) {
   .how-grid { grid-template-columns: 1fr; }
-  .card-top { flex-wrap: wrap; }
-  .headline-stats { min-width: 0; }
+  .games-list { grid-template-columns: 1fr; }
 }
 
 /* Callout */

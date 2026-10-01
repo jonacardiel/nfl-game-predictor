@@ -1,5 +1,4 @@
 const LOGO_DIR = "assets/logos";
-const MIN_LOADING_MS = 550;
 
 let weeksManifest = null;
 let historyData = {};
@@ -26,10 +25,6 @@ function fmtKickoff(gameday, gametime) {
   return gametime ? `${dateStr} · ${gametime} ET` : dateStr;
 }
 
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 function gameOutcome(game) {
   if (!game.final) return null;
   const actualMargin = game.home_score - game.away_score;
@@ -48,16 +43,18 @@ function gameOutcome(game) {
   return { suCorrect, atsCorrect, push, actualMargin };
 }
 
+const MIN_SPARKLINE_POINTS = 4; // fewer points than this is just noise, not a trend
+
 function renderSparkline(gameId) {
   const entries = historyData[gameId];
-  if (!entries || entries.length < 2) {
+  if (!entries || entries.length < MIN_SPARKLINE_POINTS) {
     return `<div class="sparkline-empty">Gathering line-movement history — check back after a few weekly updates.</div>`;
   }
 
   const width = 400;
   const height = 44;
   const vals = entries.map((e) => e.win_prob_home).filter((v) => v !== null && v !== undefined);
-  if (vals.length < 2) {
+  if (vals.length < MIN_SPARKLINE_POINTS) {
     return `<div class="sparkline-empty">Gathering line-movement history — check back after a few weekly updates.</div>`;
   }
 
@@ -101,11 +98,13 @@ function renderGameCard(game) {
   teamsCol.className = "matchup-teams";
   teamsCol.innerHTML = `
     <div class="team-row${game.final && !awayWon ? " is-loser" : ""}">
+      <span class="team-color-bar" style="background:${game.away_color || "transparent"}"></span>
       <img class="team-logo" src="${logoPath(game.away_team)}" alt="${game.away_team}" onerror="this.style.visibility='hidden'">
       <span class="team-abbr">${game.away_team}</span>
       ${game.final ? `<span class="team-score">${game.away_score}</span>` : ""}
     </div>
     <div class="team-row${game.final && !homeWon ? " is-loser" : ""}">
+      <span class="team-color-bar" style="background:${game.home_color || "transparent"}"></span>
       <img class="team-logo" src="${logoPath(game.home_team)}" alt="${game.home_team}" onerror="this.style.visibility='hidden'">
       <span class="team-abbr">${game.home_team}</span>
       ${game.final ? `<span class="team-score">${game.home_score}</span>` : ""}
@@ -140,13 +139,13 @@ function renderGameCard(game) {
 
   headline.innerHTML = `
     <div class="win-prob ${winColorClass}">${winPick} ${winProbPct}%</div>
-    <div class="win-prob-label">WIN PROB</div>
+    <div class="win-prob-label">Win prob</div>
     ${atsHtml}
   `;
 
   cardTop.appendChild(teamsCol);
-  cardTop.appendChild(kickoffTag);
   cardTop.appendChild(headline);
+  card.appendChild(kickoffTag);
   card.appendChild(cardTop);
 
   const detailId = `detail-${(game.game_id || `${game.away_team}-${game.home_team}`).replace(/[^a-zA-Z0-9_-]/g, "")}`;
@@ -156,7 +155,7 @@ function renderGameCard(game) {
   toggle.className = "expand-toggle";
   toggle.setAttribute("aria-expanded", "false");
   toggle.setAttribute("aria-controls", detailId);
-  toggle.innerHTML = `<span class="chevron" aria-hidden="true">&#9656;</span><span>DEEPER STATS</span>`;
+  toggle.innerHTML = `<span class="chevron" aria-hidden="true">&#9656;</span><span>Deeper stats</span>`;
   toggle.addEventListener("click", () => {
     const expanded = card.classList.toggle("is-expanded");
     toggle.setAttribute("aria-expanded", String(expanded));
@@ -203,26 +202,30 @@ async function loadWeek(season, week) {
   const gamesList = document.getElementById("games-list");
   const status = document.getElementById("console-status");
 
-  btn.disabled = true;
-  loadingScreen.hidden = false;
-  gamesList.innerHTML = "";
-  status.textContent = "";
+  // First load: nothing on screen yet, so the full loading state is the content.
+  // Switching weeks after that: keep the current cards visible (dimmed) instead of
+  // wiping to blank — the fetch is a local JSON file and typically resolves fast.
+  const hasExistingContent = gamesList.children.length > 0;
 
-  const start = Date.now();
+  btn.disabled = true;
+  status.textContent = "";
+  if (hasExistingContent) {
+    gamesList.classList.add("is-refreshing");
+  } else {
+    loadingScreen.hidden = false;
+  }
+
   try {
     const res = await fetch(`data/predictions/${season}_wk${week}.json`, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const payload = await res.json();
-
-    const elapsed = Date.now() - start;
-    if (elapsed < MIN_LOADING_MS) await sleep(MIN_LOADING_MS - elapsed);
-
     renderGames(payload);
   } catch (err) {
     console.error(err);
     status.textContent = `Couldn't load Week ${week} — data may not be generated yet.`;
   } finally {
     loadingScreen.hidden = true;
+    gamesList.classList.remove("is-refreshing");
     btn.disabled = false;
   }
 }
@@ -289,7 +292,7 @@ function renderScorecard(scorecard) {
     container.appendChild(el);
   });
 
-  const SMALL_SAMPLE_THRESHOLD = 16; // roughly one full week of games
+  const SMALL_SAMPLE_THRESHOLD = 96; // roughly 6 weeks — ATS variance stays wide below this
   const caveat = document.getElementById("scorecard-caveat");
   if (scorecard.games_played > 0 && scorecard.games_played < SMALL_SAMPLE_THRESHOLD) {
     caveat.textContent = `Small sample (${scorecard.games_played} game${scorecard.games_played === 1 ? "" : "s"}) — these numbers will be noisy until more of the season is in the books.`;
@@ -325,7 +328,7 @@ function renderChart(backtest) {
 
   [0, 0.25, 0.5, 0.75, 1.0].forEach((v) => {
     const y = yFor(v);
-    gridlines += `<line x1="${marginLeft}" y1="${y}" x2="${width - 20}" y2="${y}" stroke="var(--border-glass)" stroke-width="1" />`;
+    gridlines += `<line x1="${marginLeft}" y1="${y}" x2="${width - 20}" y2="${y}" stroke="var(--border)" stroke-width="1" />`;
     gridlines += `<text x="${marginLeft - 8}" y="${y + 4}" text-anchor="end" font-size="11" fill="var(--text-secondary)" font-family="var(--font-mono)">${Math.round(v * 100)}%</text>`;
   });
 

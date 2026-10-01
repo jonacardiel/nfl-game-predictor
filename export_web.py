@@ -26,6 +26,17 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 WEEKS_DIR.mkdir(parents=True, exist_ok=True)
 
 
+def _relative_luminance(hex_color: str) -> float:
+    hex_color = hex_color.lstrip("#")
+    r, g, b = (int(hex_color[i:i + 2], 16) / 255 for i in (0, 2, 4))
+
+    def lin(c: float) -> float:
+        return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+
+    r, g, b = lin(r), lin(g), lin(b)
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b
+
+
 def _team_lookup() -> dict:
     teams = nfl.load_teams().to_pandas()
     lookup = {}
@@ -33,7 +44,19 @@ def _team_lookup() -> dict:
         abbr = row.get("team_abbr")
         if not abbr:
             continue
-        lookup[abbr] = {"name": row.get("team_name"), "color": row.get("team_color")}
+        primary = row.get("team_color")
+        secondary = row.get("team_color2")
+        color = primary
+        # Several teams' primary brand color (Steelers black, several teams'
+        # navy) has too little contrast against our near-black page background
+        # to read as a color bar at all — prefer the brighter official color.
+        if primary and secondary:
+            try:
+                if _relative_luminance(primary) < 0.12 and _relative_luminance(secondary) > _relative_luminance(primary):
+                    color = secondary
+            except (ValueError, IndexError):
+                pass
+        lookup[abbr] = {"name": row.get("team_name"), "color": color}
     return lookup
 
 
