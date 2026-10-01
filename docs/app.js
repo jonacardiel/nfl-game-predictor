@@ -45,7 +45,7 @@ function gameOutcome(game) {
 
 const MIN_SPARKLINE_POINTS = 4; // fewer points than this is just noise, not a trend
 
-function renderSparkline(gameId) {
+function renderSparkline(gameId, homeColor, awayColor) {
   const entries = historyData[gameId];
   if (!entries || entries.length < MIN_SPARKLINE_POINTS) {
     return `<div class="sparkline-empty">Gathering line-movement history — check back after a few weekly updates.</div>`;
@@ -63,18 +63,42 @@ function renderSparkline(gameId) {
   const range = max - min || 1;
   const stepX = width / (entries.length - 1);
 
-  const points = entries
-    .map((e, i) => {
-      const x = i * stepX;
-      const v = e.win_prob_home ?? 0.5;
-      const y = height - ((v - min) / range) * height;
-      return `${x.toFixed(1)},${y.toFixed(1)}`;
-    })
-    .join(" ");
+  const yFor = (v) => height - ((v - min) / range) * height;
+  const points = entries.map((e, i) => ({ x: i * stepX, v: e.win_prob_home ?? 0.5 }));
+
+  // Home win prob is zero-sum with away's — a second line for "away" would just be
+  // this one mirrored, which shows no new information. Instead, color each segment
+  // by whoever's actually favored at that point: home's color above the 50% line,
+  // away's below it, splitting any segment that crosses the midline so the color
+  // change lands exactly where the favorite flips.
+  const home = homeColor || "var(--accent-lime)";
+  const away = awayColor || "var(--accent-magenta)";
+  const midY = yFor(0.5);
+
+  let segments = "";
+  for (let i = 0; i < points.length - 1; i++) {
+    const a = points[i];
+    const b = points[i + 1];
+    const aIsHome = a.v >= 0.5;
+    const bIsHome = b.v >= 0.5;
+    const ay = yFor(a.v);
+    const by = yFor(b.v);
+
+    if (aIsHome === bIsHome) {
+      const color = aIsHome ? home : away;
+      segments += `<line x1="${a.x.toFixed(1)}" y1="${ay.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${by.toFixed(1)}" stroke="${color}" stroke-width="2" stroke-linecap="round" />`;
+    } else {
+      const t = (0.5 - a.v) / (b.v - a.v);
+      const crossX = a.x + t * (b.x - a.x);
+      segments += `<line x1="${a.x.toFixed(1)}" y1="${ay.toFixed(1)}" x2="${crossX.toFixed(1)}" y2="${midY.toFixed(1)}" stroke="${aIsHome ? home : away}" stroke-width="2" stroke-linecap="round" />`;
+      segments += `<line x1="${crossX.toFixed(1)}" y1="${midY.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${by.toFixed(1)}" stroke="${bIsHome ? home : away}" stroke-width="2" stroke-linecap="round" />`;
+    }
+  }
 
   return `
     <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none">
-      <polyline points="${points}" fill="none" stroke="var(--accent-cyan)" stroke-width="2" />
+      <line x1="0" y1="${midY.toFixed(1)}" x2="${width}" y2="${midY.toFixed(1)}" stroke="var(--border)" stroke-width="1" stroke-dasharray="3,3" />
+      ${segments}
     </svg>
   `;
 }
@@ -177,7 +201,7 @@ function renderGameCard(game) {
     </div>
     <div class="sparkline-block">
       <span class="detail-label">Win Probability Movement</span>
-      ${renderSparkline(game.game_id)}
+      ${renderSparkline(game.game_id, game.home_color, game.away_color)}
     </div>
   `;
   card.appendChild(detail);
