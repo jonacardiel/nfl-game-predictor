@@ -8,22 +8,26 @@ import pandas as pd
 from nfl_predictor import data, features, model
 
 
-def load_features_for_season(season: int) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Pull schedules/pbp/trades needed to build features through `season`,
-    and return (games, schedules). Falls back to prior-season-only pbp if the
-    target season hasn't started yet (no play-by-play exists)."""
+def load_raw_inputs(season: int, refresh: bool = True) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """(pbp, schedules, trades) covering `season` and the season before it."""
     pull_seasons = [season - 1, season]
-    schedules = data.load_schedules(pull_seasons, refresh_seasons=[season])
-    trades = data.load_trades(refresh=True)
+    refresh_seasons = [season] if refresh else None
+    schedules = data.load_schedules(pull_seasons, refresh_seasons=refresh_seasons)
+    trades = data.load_trades(refresh=refresh)
 
     try:
-        pbp = data.load_pbp(pull_seasons, refresh_seasons=[season])
+        pbp = data.load_pbp(pull_seasons, refresh_seasons=refresh_seasons)
     except ValueError:
         # Target season's play-by-play doesn't exist yet (season hasn't
         # started); build_team_week_features still produces a row for the
         # target week via shrinkage to the prior season.
         pbp = data.load_pbp([season - 1])
+    return pbp, schedules, trades
 
+
+def load_features_for_season(season: int) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Build game-level features for `season`; returns (games, schedules)."""
+    pbp, schedules, trades = load_raw_inputs(season)
     team_week = features.build_team_week_features(pbp, trades, schedules)
     games = features.build_game_features(team_week, schedules)
     return games, schedules

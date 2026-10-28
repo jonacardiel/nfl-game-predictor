@@ -17,18 +17,25 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Bump ?v= on every CSS/JS change so browsers don't pair new HTML with a cached old file. -->
+<link rel="stylesheet" href="style.css?v=2026-10-28.3">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="wrap">
-    <div class="brand">
-      <span class="brand-mark">NFL</span>
-      <h1>Game Predictor</h1>
+  <div class="wrap header-row">
+    <div>
+      <div class="brand">
+        <span class="brand-mark">NFL</span>
+        <h1>Game Predictor</h1>
+      </div>
+      <p class="tagline">Logistic regression &middot; 10 seasons of EPA data &middot; recalculated every week</p>
     </div>
-    <p class="tagline">Logistic regression &middot; 10 seasons of EPA data &middot; recalculated every week</p>
+    <nav class="site-nav" aria-label="Pages">
+      <a href="./" aria-current="page">Predictions</a>
+      <a href="bracket.html">Playoff Picture</a>
+    </nav>
   </div>
 </header>
 
@@ -62,6 +69,24 @@
       <span id="last-updated" class="muted mono"></span>
     </div>
     <div id="games-list" class="games-list"></div>
+  </section>
+
+  <section id="lombardi" hidden>
+    <div class="section-heading">
+      <h2>Road to Lombardi</h2>
+      <span id="lombardi-meta" class="muted mono"></span>
+    </div>
+    <p class="muted">A race for the Super Bowl: at every point in the season the six likeliest champions are on the board. Teams enter when they climb into the top six and drop off when they fall out — each week re-simulated using only what was known at the time.</p>
+    <div class="chart-container lombardi-chart">
+      <div id="lombardi-plot" class="lombardi-plot"></div>
+      <div class="lombardi-controls">
+        <button id="lombardi-play" class="btn-ghost" type="button">Play</button>
+        <input id="lombardi-scrub" type="range" min="0" max="0" step="0.01" value="0" aria-label="Season week">
+        <span id="lombardi-week" class="lombardi-week" aria-live="polite"></span>
+      </div>
+    </div>
+    <div id="lombardi-legend" class="lombardi-legend"></div>
+    <p class="muted lombardi-note">Each point is <span id="lombardi-sims">10,000</span> simulated seasons from that week on: every remaining game is played against its real opponent, so strength of schedule is built in; playoffs are seeded by the real division-winner and wild-card rules; and the bracket is played through the Super Bowl. Tiebreakers are simplified to a coin flip. <a href="bracket.html">See the projected bracket &rarr;</a></p>
   </section>
 
   <section id="scorecard">
@@ -122,6 +147,6 @@
 
 </main>
 
-<script src="app.js"></script>
+<script src="app.js?v=2026-10-28.3"></script>
 </body>
 </html>

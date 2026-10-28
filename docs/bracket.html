@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playoff Picture · NFL Game Predictor</title>
+<meta name="description" content="The model's projected NFL playoff bracket — seeds, every simulated matchup through the Super Bowl, and each team's odds from 10,000 simulated seasons.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Playoff Picture · NFL Game Predictor">
+<meta property="og:description" content="Projected NFL playoff bracket and every team's odds from 10,000 simulated seasons, updated weekly.">
+<meta property="og:url" content="https://jonacardiel.github.io/nfl-game-predictor/bracket.html">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Bump ?v= on every CSS/JS change so browsers don't pair new HTML with a cached old file. -->
+<link rel="stylesheet" href="style.css?v=2026-10-28.3">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap wrap-wide header-row">
+    <div>
+      <div class="brand">
+        <span class="brand-mark">NFL</span>
+        <h1>Game Predictor</h1>
+      </div>
+      <p class="tagline">Logistic regression &middot; 10 seasons of EPA data &middot; recalculated every week</p>
+    </div>
+    <nav class="site-nav" aria-label="Pages">
+      <a href="./">Predictions</a>
+      <a href="bracket.html" aria-current="page">Playoff Picture</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap wrap-wide">
+
+  <section id="bracket-section">
+    <div class="section-heading">
+      <h2>Projected Playoff Bracket</h2>
+      <span id="bracket-meta" class="muted mono"></span>
+    </div>
+    <p id="bracket-intro" class="muted bracket-intro"></p>
+    <div id="bracket" class="bracket"></div>
+  </section>
+
+  <section id="odds-section">
+    <h2>Every Team's Odds</h2>
+    <p class="muted">The bracket above is one likely path. This is the full distribution — how often each team reached each round across every simulated season. The dashed line marks the playoff cut in the projected seeding.</p>
+    <div id="odds-grid" class="odds-grid"></div>
+  </section>
+
+  <footer class="site-footer">
+    <p>How it's built: the remaining regular season is played game by game against real opponents with the win model, playoffs are seeded by the real division-winner and wild-card rules (tiebreakers simplified to a coin flip), and the bracket is played through a neutral-site Super Bowl. Educational project — not affiliated with the NFL, not betting advice.</p>
+    <p><a href="https://github.com/jonacardiel/nfl-game-predictor" target="_blank" rel="noopener">Source on GitHub</a></p>
+  </footer>
+
+</main>
+
+<script src="bracket.js?v=2026-10-28.3"></script>
+</body>
+</html>

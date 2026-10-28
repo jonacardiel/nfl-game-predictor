@@ -28,6 +28,17 @@ Trained on **2,639 completed regular-season games** across the 2016–2025 seaso
 
 **Evaluation:** a season-by-season walk-forward backtest — each holdout season is scored using a model trained only on the seasons *before* it, so there's no peeking at the future.
 
+### Season simulation: Road to Lombardi + the playoff bracket
+
+[`nfl_predictor/season_sim.py`](nfl_predictor/season_sim.py) turns single-game win probabilities into season-level odds with a vectorized Monte Carlo (10,000 seasons):
+
+1. Freeze every team's stats at what was known entering a given week.
+2. Play out every remaining regular-season game against its real opponent with the win model — so remaining strength of schedule is built in, not bolted on.
+3. Seed each conference the way the NFL does (four division winners as seeds 1–4, three wild cards as 5–7, No. 1 seed gets a bye). Tiebreakers are simplified to a coin flip between teams on the same record.
+4. Play the bracket through a neutral-site Super Bowl, reseeding after the wild-card round.
+
+Re-running this as of every week of the season produces the **Road to Lombardi** chart — an animated race of the six likeliest champions' Super Bowl odds. The latest run also produces the **Playoff Picture** page: the single most likely bracket (built to respect the real division-winner rules), each matchup's win probability, and every team's odds of reaching each round. Sanity checks hold exactly on every run: title odds sum to 100%, playoff odds to 14 teams.
+
 ## Results
 
 | Season | Win accuracy | ATS accuracy |
@@ -66,6 +77,7 @@ nfl_predictor/          Core package
   model.py                  fit / evaluate / save / load the 3 models
   predict_core.py           shared prediction logic (used by predict.py and export_web.py)
   web.py                    current-week detection + live season scorecard
+  season_sim.py             Monte Carlo season + playoff simulation (Road to Lombardi, bracket)
   report.py                 seaborn plots + console table formatter
 train.py                Trains all 3 models on the last 10 completed seasons, backtests, saves artifacts
 predict.py               CLI: predictions for one week, printed + saved to CSV

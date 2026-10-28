@@ -16,8 +16,8 @@ from pathlib import Path
 import nflreadpy as nfl
 import pandas as pd
 
-from nfl_predictor import data, model, web
-from nfl_predictor.predict_core import load_features_for_season, predict_week
+from nfl_predictor import data, model, season_sim, web
+from nfl_predictor.predict_core import load_features_for_season, load_raw_inputs, predict_week
 
 DOCS_DIR = Path(__file__).resolve().parent / "docs"
 DATA_DIR = DOCS_DIR / "data"
@@ -56,7 +56,25 @@ def _team_lookup() -> dict:
                     color = secondary
             except (ValueError, IndexError):
                 pass
-        lookup[abbr] = {"name": row.get("team_name"), "color": color}
+        # Every official color readable on the dark background, chosen one first —
+        # charts that put several teams side by side use these to avoid lookalike lines.
+        readable = []
+        for c in (row.get(k) for k in ("team_color", "team_color2", "team_color3", "team_color4")):
+            # Missing third/fourth colors come through as NaN, which is truthy.
+            if not isinstance(c, str) or c == color:
+                continue
+            try:
+                if _relative_luminance(c) >= 0.12:
+                    readable.append(c)
+            except (ValueError, IndexError):
+                pass
+        lookup[abbr] = {
+            "name": row.get("team_name"),
+            "color": color,
+            "colors": [color, *readable] if color else readable,
+            "conf": row.get("team_conf"),
+            "division": row.get("team_division"),
+        }
     return lookup
 
 
@@ -166,6 +184,34 @@ def build_performance_payload(models: model.Models, season: int) -> dict:
     }
 
 
+def build_sim_payloads(models: model.Models, season: int, current_week: int, team_info: dict) -> tuple[dict, dict]:
+    """(lombardi race, playoff bracket) — both from the same Monte Carlo run."""
+    # Week files above just refreshed the cache, so no need to re-download.
+    pbp, schedules, trades = load_raw_inputs(season, refresh=False)
+    reg = schedules[(schedules["season"] == season) & (schedules["game_type"] == "REG")]
+    season_teams = sorted(set(reg["home_team"]) | set(reg["away_team"]))
+    conf_meta = pd.DataFrame(
+        {"conf": [team_info[t]["conf"] for t in season_teams],
+         "division": [team_info[t]["division"] for t in season_teams]},
+        index=season_teams,
+    )
+
+    race, latest = season_sim.lombardi_race(models, pbp, trades, schedules, conf_meta, season, current_week)
+    bracket = season_sim.project_bracket(latest, conf_meta)
+
+    generated = dt.datetime.now(dt.timezone.utc).isoformat()
+    team_meta = {
+        t: {"name": team_info[t]["name"], "color": team_info[t]["color"], "colors": team_info[t]["colors"]}
+        for t in season_teams
+    }
+    for team, entry in race["teams"].items():
+        entry.update(team_meta[team])
+    return (
+        {"season": season, "generated": generated, **race},
+        {"season": season, "generated": generated, "teams": team_meta, **bracket},
+    )
+
+
 def main() -> None:
     models = model.Models.load()
     team_info = _team_lookup()
@@ -205,6 +251,12 @@ def main() -> None:
     performance = build_performance_payload(models, season)
     (DATA_DIR / "performance.json").write_text(json.dumps(performance, indent=2))
     print(f"Wrote {DATA_DIR / 'performance.json'}")
+
+    print("Simulating the season (Road to Lombardi + playoff bracket)...")
+    lombardi, bracket = build_sim_payloads(models, season, int(current_week), team_info)
+    (DATA_DIR / "lombardi.json").write_text(json.dumps(lombardi, indent=2))
+    (DATA_DIR / "bracket.json").write_text(json.dumps(bracket, indent=2))
+    print(f"Wrote {DATA_DIR / 'lombardi.json'} and {DATA_DIR / 'bracket.json'}")
 
 
 if __name__ == "__main__":
