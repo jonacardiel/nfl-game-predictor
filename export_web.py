@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import traceback
 from pathlib import Path
 
 import nflreadpy as nfl
@@ -253,7 +254,15 @@ def main() -> None:
     print(f"Wrote {DATA_DIR / 'performance.json'}")
 
     print("Simulating the season (Road to Lombardi + playoff bracket)...")
-    lombardi, bracket = build_sim_payloads(models, season, int(current_week), team_info)
+    try:
+        lombardi, bracket = build_sim_payloads(models, season, int(current_week), team_info)
+    except Exception:
+        # The weekly picks above are the core of the site — don't let the season sim
+        # block them from publishing. Keep last week's race/bracket files and flag the
+        # failure as an error annotation on the Actions run.
+        traceback.print_exc()
+        print("::error title=Season simulation failed::Lombardi race and bracket were not updated; see log.")
+        return
     (DATA_DIR / "lombardi.json").write_text(json.dumps(lombardi, indent=2))
     (DATA_DIR / "bracket.json").write_text(json.dumps(bracket, indent=2))
     print(f"Wrote {DATA_DIR / 'lombardi.json'} and {DATA_DIR / 'bracket.json'}")

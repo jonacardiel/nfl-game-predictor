@@ -13,6 +13,15 @@ TIEBREAK_NOISE = 0.4
 STRENGTH_STATS = ("off_epa_play", "def_epa_play", "pace")
 
 
+def _team_positions(teams: pd.Series, idx: dict) -> np.ndarray:
+    """Integer row positions for team codes. An unknown code would otherwise map to NaN
+    and surface as numpy's opaque 'arrays used as indices must be of integer type'."""
+    pos = teams.map(idx)
+    if pos.isna().any():
+        raise ValueError(f"Team codes missing from the conference table: {sorted(set(teams[pos.isna()]))}")
+    return pos.to_numpy(dtype=np.int64)
+
+
 def _known_inputs(pbp, trades, schedules, season, week):
     """Play-by-play and trades exactly as they stood entering `week` (None = today)."""
     if week is None:
@@ -102,8 +111,8 @@ def _simulate_checkpoint(models, pbp, trades, schedules, conf_meta, season, week
 
     base_wins = np.zeros(n)
     margin = (played["home_score"] - played["away_score"]).to_numpy()
-    np.add.at(base_wins, played["home_team"].map(idx).to_numpy(), (margin > 0) + 0.5 * (margin == 0))
-    np.add.at(base_wins, played["away_team"].map(idx).to_numpy(), (margin < 0) + 0.5 * (margin == 0))
+    np.add.at(base_wins, _team_positions(played["home_team"], idx), (margin > 0) + 0.5 * (margin == 0))
+    np.add.at(base_wins, _team_positions(played["away_team"], idx), (margin < 0) + 0.5 * (margin == 0))
 
     x = remaining[features.FEATURE_COLS]
     if x.isna().to_numpy().any():
@@ -111,8 +120,8 @@ def _simulate_checkpoint(models, pbp, trades, schedules, conf_meta, season, week
         raise ValueError(f"Missing features for remaining games: {bad}")
     p_remaining = models.win_model.predict_proba(x)[:, 1] if len(remaining) else np.array([])
 
-    rem_home = remaining["home_team"].map(idx).to_numpy()
-    rem_away = remaining["away_team"].map(idx).to_numpy()
+    rem_home = _team_positions(remaining["home_team"], idx)
+    rem_away = _team_positions(remaining["away_team"], idx)
     g = np.arange(len(remaining))
     home_onehot = np.zeros((len(remaining), n), dtype=np.float32)
     away_onehot = np.zeros((len(remaining), n), dtype=np.float32)

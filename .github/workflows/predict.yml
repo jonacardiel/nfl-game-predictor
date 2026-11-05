@@ -25,10 +25,13 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip list | grep -iE "^(nflreadpy|pandas|numpy|polars|scikit-learn) "
 
       - name: Generate site data
-        run: python export_web.py
+        # One retry: nflverse release downloads occasionally time out.
+        run: python export_web.py || (echo "Export failed; retrying in 60s..." && sleep 60 && python export_web.py)
 
       - name: Commit updated data
         run: |
