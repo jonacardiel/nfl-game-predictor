@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "generated": "2026-10-27T17:18:19.227785+00:00",
+  "generated": "2026-11-05T22:13:36.546434+00:00",
   "teams": {
     "ARI": {
       "name": "Arizona Cardinals",
@@ -264,7 +264,7 @@
       ]
     }
   },
-  "as_of": "Wk 8",
+  "as_of": "Wk 9",
   "n_sims": 10000,
   "exact_bracket_prob": 0.0,
   "conferences": {
@@ -273,50 +273,50 @@
         {
           "seed": 1,
           "team": "BUF",
-          "prob": 0.3457
+          "prob": 0.3711
         },
         {
           "seed": 2,
           "team": "JAX",
-          "prob": 0.2398
+          "prob": 0.266
         },
         {
           "seed": 3,
           "team": "KC",
-          "prob": 0.1602
+          "prob": 0.1349
         },
         {
           "seed": 4,
           "team": "CIN",
-          "prob": 0.1219
+          "prob": 0.1499
         },
         {
           "seed": 5,
           "team": "DEN",
-          "prob": 0.2068
+          "prob": 0.1739
         },
         {
           "seed": 6,
           "team": "NE",
-          "prob": 0.1673
+          "prob": 0.1988
         },
         {
           "seed": 7,
-          "team": "BAL",
-          "prob": 0.1519
+          "team": "PIT",
+          "prob": 0.1389
         }
       ],
-      "exact_seeding_prob": 0.0004,
+      "exact_seeding_prob": 0.0008,
       "rounds": [
         {
           "name": "Wild Card",
           "games": [
             {
               "home": "JAX",
-              "away": "BAL",
+              "away": "PIT",
               "home_seed": 2,
               "away_seed": 7,
-              "p_home": 0.6695,
+              "p_home": 0.7691,
               "winner": "JAX"
             },
             {
@@ -324,7 +324,7 @@
               "away": "NE",
               "home_seed": 3,
               "away_seed": 6,
-              "p_home": 0.5612,
+              "p_home": 0.5594,
               "winner": "KC"
             },
             {
@@ -332,7 +332,7 @@
               "away": "DEN",
               "home_seed": 4,
               "away_seed": 5,
-              "p_home": 0.5801,
+              "p_home": 0.5763,
               "winner": "CIN"
             }
           ]
@@ -345,7 +345,7 @@
               "away": "CIN",
               "home_seed": 1,
               "away_seed": 4,
-              "p_home": 0.6273,
+              "p_home": 0.6309,
               "winner": "BUF"
             },
             {
@@ -353,7 +353,7 @@
               "away": "KC",
               "home_seed": 2,
               "away_seed": 3,
-              "p_home": 0.6102,
+              "p_home": 0.6471,
               "winner": "JAX"
             }
           ]
@@ -366,8 +366,8 @@
               "away": "JAX",
               "home_seed": 1,
               "away_seed": 2,
-              "p_home": 0.5025,
-              "winner": "BUF"
+              "p_home": 0.4769,
+              "winner": "JAX"
             }
           ]
         }
@@ -378,67 +378,67 @@
         {
           "seed": 1,
           "team": "SF",
-          "prob": 0.6678
+          "prob": 0.6609
         },
         {
           "seed": 2,
-          "team": "DET",
-          "prob": 0.2425
+          "team": "CHI",
+          "prob": 0.2364
         },
         {
           "seed": 3,
           "team": "NYG",
-          "prob": 0.3358
+          "prob": 0.4584
         },
         {
           "seed": 4,
           "team": "CAR",
-          "prob": 0.2658
+          "prob": 0.2624
         },
         {
           "seed": 5,
-          "team": "MIN",
-          "prob": 0.1732
+          "team": "DET",
+          "prob": 0.2143
         },
         {
           "seed": 6,
-          "team": "CHI",
-          "prob": 0.1661
+          "team": "MIN",
+          "prob": 0.1825
         },
         {
           "seed": 7,
-          "team": "SEA",
-          "prob": 0.1465
+          "team": "GB",
+          "prob": 0.173
         }
       ],
-      "exact_seeding_prob": 0.0008,
+      "exact_seeding_prob": 0.0017,
       "rounds": [
         {
           "name": "Wild Card",
           "games": [
             {
-              "home": "DET",
-              "away": "SEA",
+              "home": "CHI",
+              "away": "GB",
               "home_seed": 2,
               "away_seed": 7,
-              "p_home": 0.5932,
-              "winner": "DET"
-            },
-            {
-              "home": "NYG",
-              "away": "CHI",
-              "home_seed": 3,
-              "away_seed": 6,
-              "p_home": 0.4707,
+              "p_home": 0.5622,
               "winner": "CHI"
             },
             {
-              "home": "CAR",
+              "home": "NYG",
               "away": "MIN",
+              "home_seed": 3,
+              "away_seed": 6,
+              "p_home": 0.6138,
+              "winner": "NYG"
+            },
+            {
+              "home": "CAR",
+              "away": "DET",
               "home_seed": 4,
               "away_seed": 5,
-              "p_home": 0.596,
-              "winner": "CAR"
+              "p_home": 0.3911,
+              "winner": "DET"
             }
           ]
         },
@@ -447,19 +447,19 @@
           "games": [
             {
               "home": "SF",
-              "away": "CHI",
+              "away": "DET",
               "home_seed": 1,
-              "away_seed": 6,
-              "p_home": 0.6687,
+              "away_seed": 5,
+              "p_home": 0.6277,
               "winner": "SF"
             },
             {
-              "home": "DET",
-              "away": "CAR",
+              "home": "CHI",
+              "away": "NYG",
               "home_seed": 2,
-              "away_seed": 4,
-              "p_home": 0.6517,
-              "winner": "DET"
+              "away_seed": 3,
+              "p_home": 0.6388,
+              "winner": "CHI"
             }
           ]
         },
@@ -468,10 +468,10 @@
           "games": [
             {
               "home": "SF",
-              "away": "DET",
+              "away": "CHI",
               "home_seed": 1,
               "away_seed": 2,
-              "p_home": 0.6103,
+              "p_home": 0.646,
               "winner": "SF"
             }
           ]
@@ -480,586 +480,339 @@
     }
   },
   "super_bowl": {
-    "afc": "BUF",
+    "afc": "JAX",
     "nfc": "SF",
-    "p_afc": 0.4749,
-    "winner": "SF"
+    "p_afc": 0.5427,
+    "winner": "JAX"
   },
   "odds": {
     "ARI": {
       "conf": "NFC",
-      "record": "2-5",
-      "proj_wins": 6.1,
+      "record": "3-5",
+      "proj_wins": 6.8,
       "seed_probs": [
-        0.0,
         0.0002,
-        0.0004,
+        0.0009,
+        0.0009,
         0.0,
-        0.0015,
-        0.0054,
-        0.0115
+        0.0045,
+        0.0126,
+        0.0244
       ],
-      "playoff": 0.019,
-      "divisional": 0.0068,
-      "conf_game": 0.0023,
-      "conf_title": 0.001,
-      "super_bowl": 0.0004
+      "playoff": 0.0435,
+      "divisional": 0.0142,
+      "conf_game": 0.0046,
+      "conf_title": 0.0019,
+      "super_bowl": 0.0009
     },
     "ATL": {
+      "conf": "NFC",
+      "record": "3-5",
+      "proj_wins": 7.0,
+      "seed_probs": [
+        0.0002,
+        0.0014,
+        0.0469,
+        0.1463,
+        0.0002,
+        0.0022,
+        0.0072
+      ],
+      "playoff": 0.2044,
+      "divisional": 0.0803,
+      "conf_game": 0.0237,
+      "conf_title": 0.007,
+      "super_bowl": 0.002
+    },
+    "BAL": {
+      "conf": "AFC",
+      "record": "4-4",
+      "proj_wins": 8.9,
+      "seed_probs": [
+        0.0022,
+        0.0098,
+        0.0276,
+        0.0416,
+        0.0407,
+        0.0889,
+        0.1336
+      ],
+      "playoff": 0.3444,
+      "divisional": 0.1315,
+      "conf_game": 0.0456,
+      "conf_title": 0.017,
+      "super_bowl": 0.0069
+    },
+    "BUF": {
+      "conf": "AFC",
+      "record": "6-1",
+      "proj_wins": 12.5,
+      "seed_probs": [
+        0.3711,
+        0.2133,
+        0.1394,
+        0.0871,
+        0.088,
+        0.0486,
+        0.0306
+      ],
+      "playoff": 0.9781,
+      "divisional": 0.7544,
+      "conf_game": 0.4448,
+      "conf_title": 0.2377,
+      "super_bowl": 0.1283
+    },
+    "CAR": {
       "conf": "NFC",
       "record": "3-4",
       "proj_wins": 7.8,
       "seed_probs": [
-        0.0015,
-        0.0114,
-        0.0952,
-        0.2032,
+        0.0017,
+        0.0072,
+        0.126,
+        0.2624,
+        0.0007,
         0.0025,
-        0.0058,
-        0.0189
+        0.0103
       ],
-      "playoff": 0.3385,
-      "divisional": 0.1569,
-      "conf_game": 0.0612,
-      "conf_title": 0.0202,
-      "super_bowl": 0.0067
-    },
-    "BAL": {
-      "conf": "AFC",
-      "record": "4-3",
-      "proj_wins": 9.6,
-      "seed_probs": [
-        0.022,
-        0.0434,
-        0.0642,
-        0.0734,
-        0.0822,
-        0.136,
-        0.1519
-      ],
-      "playoff": 0.5731,
-      "divisional": 0.2767,
-      "conf_game": 0.1119,
-      "conf_title": 0.0493,
-      "super_bowl": 0.0242
-    },
-    "BUF": {
-      "conf": "AFC",
-      "record": "5-1",
-      "proj_wins": 12.3,
-      "seed_probs": [
-        0.3457,
-        0.2131,
-        0.1443,
-        0.0999,
-        0.0804,
-        0.0483,
-        0.0301
-      ],
-      "playoff": 0.9618,
-      "divisional": 0.7307,
-      "conf_game": 0.4381,
-      "conf_title": 0.2464,
-      "super_bowl": 0.134
-    },
-    "CAR": {
-      "conf": "NFC",
-      "record": "3-3",
-      "proj_wins": 8.3,
-      "seed_probs": [
-        0.0039,
-        0.026,
-        0.162,
-        0.2658,
-        0.0028,
-        0.0064,
-        0.0143
-      ],
-      "playoff": 0.4812,
-      "divisional": 0.2161,
-      "conf_game": 0.0827,
-      "conf_title": 0.0321,
-      "super_bowl": 0.0104
+      "playoff": 0.4108,
+      "divisional": 0.1778,
+      "conf_game": 0.0643,
+      "conf_title": 0.0229,
+      "super_bowl": 0.0074
     },
     "CHI": {
       "conf": "NFC",
-      "record": "5-2",
-      "proj_wins": 10.3,
+      "record": "6-2",
+      "proj_wins": 11.0,
       "seed_probs": [
-        0.0574,
-        0.1486,
-        0.0262,
-        0.003,
-        0.1696,
-        0.1661,
-        0.144
+        0.1151,
+        0.2364,
+        0.0233,
+        0.0012,
+        0.2123,
+        0.1673,
+        0.1131
       ],
-      "playoff": 0.7149,
-      "divisional": 0.401,
-      "conf_game": 0.193,
-      "conf_title": 0.0802,
-      "super_bowl": 0.0359
+      "playoff": 0.8687,
+      "divisional": 0.5393,
+      "conf_game": 0.2794,
+      "conf_title": 0.1334,
+      "super_bowl": 0.0614
     },
     "CIN": {
       "conf": "AFC",
-      "record": "4-2",
-      "proj_wins": 10.6,
+      "record": "5-2",
+      "proj_wins": 11.0,
       "seed_probs": [
-        0.0702,
-        0.1152,
-        0.1389,
-        0.1219,
-        0.095,
-        0.1292,
-        0.1118
+        0.0804,
+        0.1309,
+        0.1553,
+        0.1499,
+        0.1033,
+        0.1226,
+        0.1039
       ],
-      "playoff": 0.7822,
-      "divisional": 0.4127,
-      "conf_game": 0.1807,
-      "conf_title": 0.0783,
-      "super_bowl": 0.0358
+      "playoff": 0.8463,
+      "divisional": 0.4556,
+      "conf_game": 0.1914,
+      "conf_title": 0.0778,
+      "super_bowl": 0.0328
     },
     "CLE": {
       "conf": "AFC",
-      "record": "5-2",
-      "proj_wins": 9.2,
+      "record": "5-3",
+      "proj_wins": 8.7,
       "seed_probs": [
-        0.0097,
-        0.0253,
-        0.0455,
-        0.0542,
-        0.0604,
-        0.1098,
-        0.132
+        0.0027,
+        0.0079,
+        0.018,
+        0.0304,
+        0.0328,
+        0.0768,
+        0.1228
       ],
-      "playoff": 0.4369,
-      "divisional": 0.1369,
-      "conf_game": 0.0388,
-      "conf_title": 0.012,
-      "super_bowl": 0.004
+      "playoff": 0.2914,
+      "divisional": 0.0749,
+      "conf_game": 0.0171,
+      "conf_title": 0.0051,
+      "super_bowl": 0.0013
     },
     "DAL": {
       "conf": "NFC",
-      "record": "3-4",
-      "proj_wins": 8.5,
+      "record": "3-5",
+      "proj_wins": 7.7,
       "seed_probs": [
-        0.0048,
-        0.0259,
-        0.1772,
-        0.121,
-        0.0107,
-        0.0254,
-        0.0454
+        0.0003,
+        0.0045,
+        0.1093,
+        0.0716,
+        0.0029,
+        0.014,
+        0.0298
       ],
-      "playoff": 0.4104,
-      "divisional": 0.2116,
-      "conf_game": 0.0957,
-      "conf_title": 0.0388,
-      "super_bowl": 0.0166
+      "playoff": 0.2324,
+      "divisional": 0.1169,
+      "conf_game": 0.0539,
+      "conf_title": 0.0243,
+      "super_bowl": 0.0097
     },
     "DEN": {
       "conf": "AFC",
-      "record": "5-2",
-      "proj_wins": 10.5,
+      "record": "6-2",
+      "proj_wins": 11.0,
       "seed_probs": [
-        0.067,
-        0.0792,
-        0.0814,
-        0.0873,
-        0.2068,
-        0.1374,
-        0.1146
+        0.0782,
+        0.112,
+        0.1386,
+        0.1481,
+        0.1739,
+        0.1242,
+        0.0928
       ],
-      "playoff": 0.7737,
-      "divisional": 0.3662,
-      "conf_game": 0.1446,
-      "conf_title": 0.0582,
-      "super_bowl": 0.0248
+      "playoff": 0.8678,
+      "divisional": 0.4265,
+      "conf_game": 0.1636,
+      "conf_title": 0.0631,
+      "super_bowl": 0.0293
     },
     "DET": {
       "conf": "NFC",
-      "record": "4-2",
-      "proj_wins": 10.8,
+      "record": "5-2",
+      "proj_wins": 10.9,
       "seed_probs": [
-        0.1118,
-        0.2425,
-        0.0368,
-        0.0029,
-        0.1752,
-        0.1409,
-        0.1054
+        0.1122,
+        0.2161,
+        0.0165,
+        0.0014,
+        0.2143,
+        0.1596,
+        0.1164
       ],
-      "playoff": 0.8155,
-      "divisional": 0.5259,
-      "conf_game": 0.2903,
-      "conf_title": 0.1416,
-      "super_bowl": 0.0666
+      "playoff": 0.8365,
+      "divisional": 0.5233,
+      "conf_game": 0.2765,
+      "conf_title": 0.1279,
+      "super_bowl": 0.0539
     },
     "GB": {
       "conf": "NFC",
-      "record": "4-3",
-      "proj_wins": 9.4,
+      "record": "5-3",
+      "proj_wins": 9.8,
       "seed_probs": [
-        0.0162,
-        0.0693,
-        0.013,
-        0.0028,
-        0.1155,
-        0.1427,
-        0.1526
+        0.0252,
+        0.0804,
+        0.0113,
+        0.0007,
+        0.1553,
+        0.1783,
+        0.173
       ],
-      "playoff": 0.5121,
-      "divisional": 0.2601,
-      "conf_game": 0.1189,
-      "conf_title": 0.0532,
-      "super_bowl": 0.0227
+      "playoff": 0.6242,
+      "divisional": 0.3335,
+      "conf_game": 0.1604,
+      "conf_title": 0.0677,
+      "super_bowl": 0.029
     },
     "HOU": {
       "conf": "AFC",
       "record": "2-5",
       "proj_wins": 7.7,
       "seed_probs": [
-        0.0001,
-        0.0016,
-        0.0077,
-        0.0254,
-        0.0175,
-        0.0353,
-        0.0612
+        0.0,
+        0.001,
+        0.0051,
+        0.0136,
+        0.015,
+        0.0368,
+        0.0635
       ],
-      "playoff": 0.1488,
-      "divisional": 0.0605,
-      "conf_game": 0.023,
-      "conf_title": 0.0094,
-      "super_bowl": 0.0036
+      "playoff": 0.135,
+      "divisional": 0.0524,
+      "conf_game": 0.0178,
+      "conf_title": 0.0063,
+      "super_bowl": 0.002
     },
     "IND": {
       "conf": "AFC",
-      "record": "2-5",
-      "proj_wins": 6.7,
+      "record": "2-6",
+      "proj_wins": 5.9,
       "seed_probs": [
+        0.0,
+        0.0,
         0.0001,
-        0.0004,
-        0.002,
-        0.0101,
-        0.0022,
-        0.0087,
-        0.0234
+        0.0016,
+        0.0,
+        0.0025,
+        0.0076
       ],
-      "playoff": 0.0469,
-      "divisional": 0.0149,
-      "conf_game": 0.0043,
-      "conf_title": 0.0012,
-      "super_bowl": 0.0006
+      "playoff": 0.0118,
+      "divisional": 0.0027,
+      "conf_game": 0.0008,
+      "conf_title": 0.0004,
+      "super_bowl": 0.0
     },
     "JAX": {
       "conf": "AFC",
-      "record": "4-2",
-      "proj_wins": 11.8,
+      "record": "5-2",
+      "proj_wins": 12.3,
       "seed_probs": [
-        0.2108,
-        0.2398,
-        0.2284,
-        0.2736,
-        0.002,
-        0.008,
-        0.0093
+        0.2752,
+        0.266,
+        0.2222,
+        0.2151,
+        0.0015,
+        0.0031,
+        0.0042
       ],
-      "playoff": 0.9719,
-      "divisional": 0.7329,
-      "conf_game": 0.4493,
-      "conf_title": 0.2649,
-      "super_bowl": 0.1543
+      "playoff": 0.9873,
+      "divisional": 0.7871,
+      "conf_game": 0.5232,
+      "conf_title": 0.3273,
+      "super_bowl": 0.1968
     },
     "KC": {
       "conf": "AFC",
-      "record": "5-1",
-      "proj_wins": 11.6,
+      "record": "5-2",
+      "proj_wins": 11.1,
       "seed_probs": [
-        0.2094,
-        0.1833,
-        0.1602,
-        0.1256,
-        0.1158,
-        0.0718,
-        0.0563
+        0.1015,
+        0.1222,
+        0.1349,
+        0.1462,
+        0.1517,
+        0.1154,
+        0.0981
       ],
-      "playoff": 0.9224,
-      "divisional": 0.6325,
-      "conf_game": 0.3445,
-      "conf_title": 0.1691,
-      "super_bowl": 0.0897
+      "playoff": 0.87,
+      "divisional": 0.5453,
+      "conf_game": 0.2798,
+      "conf_title": 0.1333,
+      "super_bowl": 0.0701
     },
     "LA": {
       "conf": "NFC",
-      "record": "3-4",
-      "proj_wins": 9.2,
+      "record": "4-4",
+      "proj_wins": 9.4,
       "seed_probs": [
-        0.0104,
-        0.0172,
-        0.005,
-        0.0013,
-        0.125,
-        0.1408,
-        0.154
+        0.0123,
+        0.0271,
+        0.0066,
+        0.0007,
+        0.1527,
+        0.1554,
+        0.1684
       ],
-      "playoff": 0.4537,
-      "divisional": 0.2646,
-      "conf_game": 0.1346,
-      "conf_title": 0.0714,
-      "super_bowl": 0.0358
+      "playoff": 0.5232,
+      "divisional": 0.3083,
+      "conf_game": 0.1571,
+      "conf_title": 0.0854,
+      "super_bowl": 0.0438
     },
     "LAC": {
       "conf": "AFC",
-      "record": "0-6",
-      "proj_wins": 3.4,
-      "seed_probs": [
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0,
-        0.0001,
-        0.0002
-      ],
-      "playoff": 0.0003,
-      "divisional": 0.0002,
-      "conf_game": 0.0,
-      "conf_title": 0.0,
-      "super_bowl": 0.0
-    },
-    "LV": {
-      "conf": "AFC",
-      "record": "3-4",
-      "proj_wins": 6.7,
-      "seed_probs": [
-        0.0,
-        0.0,
-        0.0019,
-        0.0047,
-        0.0048,
-        0.0106,
-        0.0201
-      ],
-      "playoff": 0.0421,
-      "divisional": 0.0094,
-      "conf_game": 0.0017,
-      "conf_title": 0.0004,
-      "super_bowl": 0.0
-    },
-    "MIA": {
-      "conf": "AFC",
-      "record": "1-5",
-      "proj_wins": 4.6,
-      "seed_probs": [
-        0.0,
-        0.0,
-        0.0,
-        0.0001,
-        0.0001,
-        0.0004,
-        0.0014
-      ],
-      "playoff": 0.002,
-      "divisional": 0.0006,
-      "conf_game": 0.0003,
-      "conf_title": 0.0001,
-      "super_bowl": 0.0001
-    },
-    "MIN": {
-      "conf": "NFC",
-      "record": "6-0",
-      "proj_wins": 10.4,
-      "seed_probs": [
-        0.085,
-        0.1552,
-        0.0269,
-        0.0024,
-        0.1732,
-        0.1644,
-        0.1346
-      ],
-      "playoff": 0.7417,
-      "divisional": 0.3444,
-      "conf_game": 0.1216,
-      "conf_title": 0.0422,
-      "super_bowl": 0.014
-    },
-    "NE": {
-      "conf": "AFC",
-      "record": "4-3",
-      "proj_wins": 10.3,
-      "seed_probs": [
-        0.0428,
-        0.0492,
-        0.0546,
-        0.0489,
-        0.2353,
-        0.1673,
-        0.1364
-      ],
-      "playoff": 0.7345,
-      "divisional": 0.3943,
-      "conf_game": 0.1874,
-      "conf_title": 0.0871,
-      "super_bowl": 0.0454
-    },
-    "NO": {
-      "conf": "NFC",
-      "record": "2-5",
-      "proj_wins": 6.3,
-      "seed_probs": [
-        0.0,
-        0.001,
-        0.0215,
-        0.0698,
-        0.0004,
-        0.002,
-        0.005
-      ],
-      "playoff": 0.0997,
-      "divisional": 0.0417,
-      "conf_game": 0.0132,
-      "conf_title": 0.0042,
-      "super_bowl": 0.0011
-    },
-    "NYG": {
-      "conf": "NFC",
-      "record": "4-2-1",
-      "proj_wins": 9.3,
-      "seed_probs": [
-        0.0182,
-        0.0624,
-        0.3358,
-        0.1783,
-        0.0073,
-        0.0171,
-        0.0331
-      ],
-      "playoff": 0.6522,
-      "divisional": 0.3135,
-      "conf_game": 0.1362,
-      "conf_title": 0.0526,
-      "super_bowl": 0.0176
-    },
-    "NYJ": {
-      "conf": "AFC",
-      "record": "2-5",
-      "proj_wins": 6.1,
-      "seed_probs": [
-        0.0,
-        0.0,
-        0.0001,
-        0.0013,
-        0.0019,
-        0.0054,
-        0.0106
-      ],
-      "playoff": 0.0193,
-      "divisional": 0.0057,
-      "conf_game": 0.0012,
-      "conf_title": 0.0004,
-      "super_bowl": 0.0
-    },
-    "PHI": {
-      "conf": "NFC",
-      "record": "2-5",
-      "proj_wins": 5.8,
-      "seed_probs": [
-        0.0001,
-        0.0011,
-        0.0116,
-        0.0179,
-        0.0003,
-        0.0017,
-        0.004
-      ],
-      "playoff": 0.0367,
-      "divisional": 0.0107,
-      "conf_game": 0.0027,
-      "conf_title": 0.0009,
-      "super_bowl": 0.0002
-    },
-    "PIT": {
-      "conf": "AFC",
-      "record": "5-2",
-      "proj_wins": 9.8,
-      "seed_probs": [
-        0.0222,
-        0.0495,
-        0.0708,
-        0.0736,
-        0.0956,
-        0.1317,
-        0.1407
-      ],
-      "playoff": 0.5841,
-      "divisional": 0.2258,
-      "conf_game": 0.0742,
-      "conf_title": 0.0232,
-      "super_bowl": 0.0079
-    },
-    "SEA": {
-      "conf": "NFC",
-      "record": "4-3",
-      "proj_wins": 9.5,
-      "seed_probs": [
-        0.0224,
-        0.0246,
-        0.0066,
-        0.0007,
-        0.1709,
-        0.153,
-        0.1465
-      ],
-      "playoff": 0.5247,
-      "divisional": 0.2704,
-      "conf_game": 0.1156,
-      "conf_title": 0.0492,
-      "super_bowl": 0.0211
-    },
-    "SF": {
-      "conf": "NFC",
-      "record": "6-1",
-      "proj_wins": 13.0,
-      "seed_probs": [
-        0.6678,
-        0.2115,
-        0.028,
-        0.0039,
-        0.0433,
-        0.0213,
-        0.0127
-      ],
-      "playoff": 0.9885,
-      "divisional": 0.8841,
-      "conf_game": 0.5979,
-      "conf_title": 0.402,
-      "super_bowl": 0.2233
-    },
-    "TB": {
-      "conf": "NFC",
-      "record": "2-5",
-      "proj_wins": 6.7,
-      "seed_probs": [
-        0.0004,
-        0.002,
-        0.0312,
-        0.1051,
-        0.0011,
-        0.0038,
-        0.0102
-      ],
-      "playoff": 0.1538,
-      "divisional": 0.0709,
-      "conf_game": 0.0275,
-      "conf_title": 0.0097,
-      "super_bowl": 0.003
-    },
-    "TEN": {
-      "conf": "AFC",
-      "record": "1-6",
-      "proj_wins": 3.5,
+      "record": "0-7",
+      "proj_wins": 2.9,
       "seed_probs": [
         0.0,
         0.0,
@@ -1075,24 +828,271 @@
       "conf_title": 0.0,
       "super_bowl": 0.0
     },
-    "WAS": {
-      "conf": "NFC",
-      "record": "1-4-1",
-      "proj_wins": 6.2,
+    "LV": {
+      "conf": "AFC",
+      "record": "4-4",
+      "proj_wins": 7.5,
       "seed_probs": [
         0.0001,
-        0.0011,
-        0.0226,
-        0.0219,
-        0.0007,
-        0.0032,
-        0.0078
+        0.0014,
+        0.0037,
+        0.0131,
+        0.008,
+        0.0218,
+        0.049
       ],
-      "playoff": 0.0574,
-      "divisional": 0.0213,
-      "conf_game": 0.0066,
-      "conf_title": 0.0007,
-      "super_bowl": 0.0002
+      "playoff": 0.0971,
+      "divisional": 0.0232,
+      "conf_game": 0.0047,
+      "conf_title": 0.0009,
+      "super_bowl": 0.0003
+    },
+    "MIA": {
+      "conf": "AFC",
+      "record": "1-6",
+      "proj_wins": 4.5,
+      "seed_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0007
+      ],
+      "playoff": 0.0008,
+      "divisional": 0.0002,
+      "conf_game": 0.0001,
+      "conf_title": 0.0,
+      "super_bowl": 0.0
+    },
+    "MIN": {
+      "conf": "NFC",
+      "record": "6-1",
+      "proj_wins": 10.1,
+      "seed_probs": [
+        0.0477,
+        0.0985,
+        0.0134,
+        0.0006,
+        0.1706,
+        0.1825,
+        0.1691
+      ],
+      "playoff": 0.6824,
+      "divisional": 0.285,
+      "conf_game": 0.096,
+      "conf_title": 0.0297,
+      "super_bowl": 0.0101
+    },
+    "NE": {
+      "conf": "AFC",
+      "record": "5-3",
+      "proj_wins": 10.6,
+      "seed_probs": [
+        0.0457,
+        0.052,
+        0.0485,
+        0.0416,
+        0.2671,
+        0.1988,
+        0.1475
+      ],
+      "playoff": 0.8012,
+      "divisional": 0.4112,
+      "conf_game": 0.196,
+      "conf_title": 0.0901,
+      "super_bowl": 0.0432
+    },
+    "NO": {
+      "conf": "NFC",
+      "record": "2-5",
+      "proj_wins": 6.4,
+      "seed_probs": [
+        0.0,
+        0.0005,
+        0.0262,
+        0.0968,
+        0.0001,
+        0.0012,
+        0.004
+      ],
+      "playoff": 0.1288,
+      "divisional": 0.0488,
+      "conf_game": 0.0155,
+      "conf_title": 0.0045,
+      "super_bowl": 0.0016
+    },
+    "NYG": {
+      "conf": "NFC",
+      "record": "4-2-1",
+      "proj_wins": 9.5,
+      "seed_probs": [
+        0.0194,
+        0.0692,
+        0.4584,
+        0.1641,
+        0.0022,
+        0.006,
+        0.0196
+      ],
+      "playoff": 0.7389,
+      "divisional": 0.3635,
+      "conf_game": 0.1492,
+      "conf_title": 0.0521,
+      "super_bowl": 0.0189
+    },
+    "NYJ": {
+      "conf": "AFC",
+      "record": "2-6",
+      "proj_wins": 5.8,
+      "seed_probs": [
+        0.0,
+        0.0,
+        0.0002,
+        0.001,
+        0.0003,
+        0.0012,
+        0.0065
+      ],
+      "playoff": 0.0092,
+      "divisional": 0.0031,
+      "conf_game": 0.0002,
+      "conf_title": 0.0001,
+      "super_bowl": 0.0001
+    },
+    "PHI": {
+      "conf": "NFC",
+      "record": "2-6",
+      "proj_wins": 5.4,
+      "seed_probs": [
+        0.0,
+        0.0001,
+        0.0055,
+        0.0097,
+        0.0,
+        0.0005,
+        0.0016
+      ],
+      "playoff": 0.0174,
+      "divisional": 0.0067,
+      "conf_game": 0.0019,
+      "conf_title": 0.0003,
+      "super_bowl": 0.0
+    },
+    "PIT": {
+      "conf": "AFC",
+      "record": "6-2",
+      "proj_wins": 10.5,
+      "seed_probs": [
+        0.0429,
+        0.0835,
+        0.1064,
+        0.1105,
+        0.1177,
+        0.1593,
+        0.1389
+      ],
+      "playoff": 0.7592,
+      "divisional": 0.3319,
+      "conf_game": 0.1149,
+      "conf_title": 0.0409,
+      "super_bowl": 0.016
+    },
+    "SEA": {
+      "conf": "NFC",
+      "record": "4-4",
+      "proj_wins": 8.6,
+      "seed_probs": [
+        0.0045,
+        0.0102,
+        0.0025,
+        0.0002,
+        0.0582,
+        0.0907,
+        0.1284
+      ],
+      "playoff": 0.2947,
+      "divisional": 0.134,
+      "conf_game": 0.0508,
+      "conf_title": 0.0203,
+      "super_bowl": 0.0077
+    },
+    "SF": {
+      "conf": "NFC",
+      "record": "6-1",
+      "proj_wins": 13.1,
+      "seed_probs": [
+        0.6609,
+        0.243,
+        0.0281,
+        0.0019,
+        0.0243,
+        0.0178,
+        0.0138
+      ],
+      "playoff": 0.9898,
+      "divisional": 0.8805,
+      "conf_game": 0.6001,
+      "conf_title": 0.3993,
+      "super_bowl": 0.2195
+    },
+    "TB": {
+      "conf": "NFC",
+      "record": "3-5",
+      "proj_wins": 7.4,
+      "seed_probs": [
+        0.0003,
+        0.0032,
+        0.0745,
+        0.2064,
+        0.0006,
+        0.0031,
+        0.007
+      ],
+      "playoff": 0.2951,
+      "divisional": 0.1437,
+      "conf_game": 0.052,
+      "conf_title": 0.0191,
+      "super_bowl": 0.0061
+    },
+    "TEN": {
+      "conf": "AFC",
+      "record": "1-7",
+      "proj_wins": 3.5,
+      "seed_probs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0003
+      ],
+      "playoff": 0.0004,
+      "divisional": 0.0,
+      "conf_game": 0.0,
+      "conf_title": 0.0,
+      "super_bowl": 0.0
+    },
+    "WAS": {
+      "conf": "NFC",
+      "record": "2-4-1",
+      "proj_wins": 6.8,
+      "seed_probs": [
+        0.0,
+        0.0013,
+        0.0506,
+        0.036,
+        0.0011,
+        0.0063,
+        0.0139
+      ],
+      "playoff": 0.1092,
+      "divisional": 0.0442,
+      "conf_game": 0.0146,
+      "conf_title": 0.0042,
+      "super_bowl": 0.0009
     }
   }
 }

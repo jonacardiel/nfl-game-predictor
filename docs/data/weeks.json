@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "current_week": 8,
+  "current_week": 9,
   "weeks": [
     {
       "week": 1,
@@ -32,7 +32,7 @@
     },
     {
       "week": 8,
-      "status": "upcoming"
+      "status": "final"
     },
     {
       "week": 9,
