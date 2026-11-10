@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T22:13:24.163967+00:00",
+  "generated": "2026-11-10T13:10:28.290648+00:00",
   "backtest_by_season": [
     {
       "n_games": 256,
@@ -60,10 +60,10 @@
   ],
   "current_season": 2026,
   "current_season_scorecard": {
-    "games_played": 121,
-    "straight_up_record": "73-48",
-    "straight_up_pct": 0.603,
-    "ats_record": "49-66-6",
-    "ats_pct": 0.426
+    "games_played": 136,
+    "straight_up_record": "87-49",
+    "straight_up_pct": 0.64,
+    "ats_record": "57-73-6",
+    "ats_pct": 0.438
   }
 }
