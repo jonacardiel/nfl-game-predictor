@@ -108,8 +108,8 @@ def _week_status(reg_week_games: pd.DataFrame) -> str:
     return "live"
 
 
-def build_week_payload(models: model.Models, season: int, week: int, team_info: dict) -> dict:
-    target = predict_week(models, season, week)
+def build_week_payload(models: model.Models, season_games: pd.DataFrame, season: int, week: int, team_info: dict) -> dict:
+    target = predict_week(models, season_games, season, week)
     target = target.sort_values(["gameday", "gametime"], na_position="last")
 
     games = []
@@ -154,27 +154,31 @@ def build_week_payload(models: model.Models, season: int, week: int, team_info: 
 
 
 def update_history(history: dict, week_payload: dict) -> dict:
+    """Pre-game snapshots only: anything taken on or after kickoff day isn't line movement."""
     today = dt.date.today().isoformat()
     for game in week_payload["games"]:
-        gid = game["game_id"]
+        gid, kickoff = game["game_id"], game["gameday"]
         if not gid:
             continue
-        entries = history.setdefault(gid, [])
-        entries[:] = [e for e in entries if e["date"] != today]
-        entries.append({
-            "date": today,
-            "spread_line": game["spread_line"],
-            "win_prob_home": game["win_prob_home"],
-        })
-        entries.sort(key=lambda e: e["date"])
+        before_kickoff = kickoff is None or today < kickoff
+        entries = [e for e in history.get(gid, []) if e["date"] != today and (kickoff is None or e["date"] < kickoff)]
+        if before_kickoff:
+            entries.append({
+                "date": today,
+                "spread_line": game["spread_line"],
+                "win_prob_home": game["win_prob_home"],
+            })
+        if entries:
+            history[gid] = sorted(entries, key=lambda e: e["date"])
+        else:
+            history.pop(gid, None)
     return history
 
 
-def build_performance_payload(models: model.Models, season: int) -> dict:
+def build_performance_payload(models: model.Models, season_games: pd.DataFrame, season: int) -> dict:
     backtest_path = model.MODELS_DIR / "backtest.json"
     backtest = json.loads(backtest_path.read_text()) if backtest_path.exists() else []
 
-    season_games, _schedules = load_features_for_season(season)
     scorecard = web.season_scorecard(models, season_games, season)
 
     return {
@@ -229,9 +233,12 @@ def main() -> None:
     history_path = DATA_DIR / "history.json"
     history = json.loads(history_path.read_text()) if history_path.exists() else {}
 
+    # One download + feature build shared by every week and the scorecard.
+    season_games = load_features_for_season(season)
+
     week_meta = []
     for week in weeks:
-        payload = build_week_payload(models, season, week, team_info)
+        payload = build_week_payload(models, season_games, season, week, team_info)
         (WEEKS_DIR / f"{season}_wk{week}.json").write_text(json.dumps(payload, indent=2))
         history = update_history(history, payload)
 
@@ -249,7 +256,7 @@ def main() -> None:
     (DATA_DIR / "weeks.json").write_text(json.dumps(weeks_manifest, indent=2))
     print(f"\nWrote manifest + {len(weeks)} week files to {WEEKS_DIR}")
 
-    performance = build_performance_payload(models, season)
+    performance = build_performance_payload(models, season_games, season)
     (DATA_DIR / "performance.json").write_text(json.dumps(performance, indent=2))
     print(f"Wrote {DATA_DIR / 'performance.json'}")
 

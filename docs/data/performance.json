@@ -1,25 +1,25 @@
 {
-  "generated": "2026-11-17T13:10:53.192669+00:00",
+  "generated": "2026-11-24T06:08:51.715447+00:00",
   "backtest_by_season": [
     {
       "n_games": 256,
-      "win_accuracy": 0.59375,
+      "win_accuracy": 0.5921568627,
       "win_log_loss": 0.6709130562,
       "n_ats_games": 246,
-      "ats_accuracy": 0.5081300813,
+      "ats_accuracy": 0.5,
       "season": 2019
     },
     {
       "n_games": 256,
-      "win_accuracy": 0.62109375,
+      "win_accuracy": 0.6235294118,
       "win_log_loss": 0.6339592199,
       "n_ats_games": 256,
-      "ats_accuracy": 0.48828125,
+      "ats_accuracy": 0.49609375,
       "season": 2020
     },
     {
       "n_games": 272,
-      "win_accuracy": 0.6139705882,
+      "win_accuracy": 0.6162361624,
       "win_log_loss": 0.6592368271,
       "n_ats_games": 268,
       "ats_accuracy": 0.5149253731,
@@ -27,10 +27,10 @@
     },
     {
       "n_games": 271,
-      "win_accuracy": 0.6273062731,
+      "win_accuracy": 0.6282527881,
       "win_log_loss": 0.6429154084,
       "n_ats_games": 261,
-      "ats_accuracy": 0.5172413793,
+      "ats_accuracy": 0.5249042146,
       "season": 2022
     },
     {
@@ -38,7 +38,7 @@
       "win_accuracy": 0.625,
       "win_log_loss": 0.6531007543,
       "n_ats_games": 258,
-      "ats_accuracy": 0.476744186,
+      "ats_accuracy": 0.4728682171,
       "season": 2023
     },
     {
@@ -46,24 +46,24 @@
       "win_accuracy": 0.6875,
       "win_log_loss": 0.6139071655,
       "n_ats_games": 268,
-      "ats_accuracy": 0.5298507463,
+      "ats_accuracy": 0.5186567164,
       "season": 2024
     },
     {
       "n_games": 272,
-      "win_accuracy": 0.5955882353,
+      "win_accuracy": 0.594095941,
       "win_log_loss": 0.65530265,
       "n_ats_games": 271,
-      "ats_accuracy": 0.4907749077,
+      "ats_accuracy": 0.4686346863,
       "season": 2025
     }
   ],
   "current_season": 2026,
   "current_season_scorecard": {
-    "games_played": 150,
-    "straight_up_record": "95-55",
-    "straight_up_pct": 0.633,
-    "ats_record": "59-85-6",
-    "ats_pct": 0.41
+    "games_played": 163,
+    "straight_up_record": "103-59-1",
+    "straight_up_pct": 0.636,
+    "ats_record": "68-89-6",
+    "ats_pct": 0.433
   }
 }

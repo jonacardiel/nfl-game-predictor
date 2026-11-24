@@ -50,7 +50,8 @@ function gameOutcome(game) {
   if (!game.final) return null;
   const actualMargin = game.home_score - game.away_score;
   const suPickedHome = game.win_prob_home >= 0.5;
-  const suCorrect = suPickedHome === (actualMargin > 0);
+  // A tie grades neither pick (null), same as the season scorecard.
+  const suCorrect = actualMargin === 0 ? null : suPickedHome === (actualMargin > 0);
 
   let atsCorrect = null;
   let push = false;
@@ -69,14 +70,14 @@ const MIN_SPARKLINE_POINTS = 4; // fewer points than this is just noise, not a t
 function renderSparkline(gameId, homeColor, awayColor) {
   const entries = historyData[gameId];
   if (!entries || entries.length < MIN_SPARKLINE_POINTS) {
-    return `<div class="sparkline-empty">Gathering line-movement history — check back after a few weekly updates.</div>`;
+    return `<div class="sparkline-empty">Not enough pre-game snapshots to chart movement (one is taken each weekly update).</div>`;
   }
 
   const width = 400;
   const height = 44;
   const vals = entries.map((e) => e.win_prob_home).filter((v) => v !== null && v !== undefined);
   if (vals.length < MIN_SPARKLINE_POINTS) {
-    return `<div class="sparkline-empty">Gathering line-movement history — check back after a few weekly updates.</div>`;
+    return `<div class="sparkline-empty">Not enough pre-game snapshots to chart movement (one is taken each weekly update).</div>`;
   }
 
   const min = Math.min(...vals, 0.3);
@@ -178,8 +179,9 @@ function renderGameCard(game) {
   const winProbPct = Math.round(winProb * 100);
   // Once a game is over, a missed pick shouldn't keep glowing in the "confident" color.
   const winColorClass = outcome && !outcome.suCorrect ? "value-muted" : winProbPct >= 60 ? "value-lime" : "value-cyan";
-  const winBadge = !outcome ? "" : outcome.suCorrect
-    ? `<span class="badge-inline correct">HIT</span>`
+  const winBadge = !outcome ? ""
+    : outcome.suCorrect === null ? `<span class="badge-inline push">TIE</span>`
+    : outcome.suCorrect ? `<span class="badge-inline correct">HIT</span>`
     : `<span class="badge-inline incorrect">MISS</span>`;
 
   let atsHtml = "";

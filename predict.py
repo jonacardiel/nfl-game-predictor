@@ -8,7 +8,7 @@ from __future__ import annotations
 import argparse
 
 from nfl_predictor import model, report
-from nfl_predictor.predict_core import predict_week
+from nfl_predictor.predict_core import load_features_for_season, predict_week
 
 
 def main() -> None:
@@ -18,7 +18,7 @@ def main() -> None:
     args = parser.parse_args()
 
     models = model.Models.load()
-    target = predict_week(models, args.season, args.week)
+    target = predict_week(models, load_features_for_season(args.season), args.season, args.week)
 
     table = report.format_predictions_table(target, args.season, args.week)
     print(table)

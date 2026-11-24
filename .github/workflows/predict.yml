@@ -29,6 +29,9 @@ jobs:
           pip install -r requirements.txt
           pip list | grep -iE "^(nflreadpy|pandas|numpy|polars|scikit-learn) "
 
+      - name: Check core rules
+        run: python tests/check_core.py
+
       - name: Generate site data
         # One retry: nflverse release downloads occasionally time out.
         run: python export_web.py || (echo "Export failed; retrying in 60s..." && sleep 60 && python export_web.py)
@@ -39,4 +42,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/data/
           git diff --cached --quiet && echo "No changes to commit." || git commit -m "Update weekly predictions [automated]"
+          # Someone may have pushed while this ran; replay on top instead of failing the push.
+          git pull --rebase
           git push

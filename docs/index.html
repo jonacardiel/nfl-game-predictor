@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;600;700&family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 <!-- Bump ?v= on every CSS/JS change so browsers don't pair new HTML with a cached old file. -->
-<link rel="stylesheet" href="style.css?v=2026-10-28.3">
+<link rel="stylesheet" href="style.css?v=2026-11-23.1">
 </head>
 <body>
 
@@ -135,7 +135,7 @@
   <section id="honest-results">
     <h2>An Honest Note on Results</h2>
     <div class="callout">
-      <p><strong>Straight-up win accuracy backtests at 59–69% per season.</strong> Against-the-spread accuracy backtests at <strong>~49–53%</strong> — essentially a coin flip. That's expected and correct: the closing spread already prices in almost everything this model knows, and a five-feature logistic regression has no business beating an efficient market.</p>
+      <p><strong>Straight-up win accuracy backtests at 59–69% per season.</strong> Against-the-spread accuracy backtests at <strong>~47–53%</strong> — essentially a coin flip. That's expected and correct: the closing spread already prices in almost everything this model knows, and a five-feature logistic regression has no business beating an efficient market.</p>
       <p>Early in development, a sign error in the ATS label formula (using <code>-spread_line</code> instead of <code>spread_line</code>) produced a suspicious <strong>79.5%</strong> backtest accuracy. That number should have been an immediate red flag — no simple model beats Vegas by that margin — and tracing it down surfaced the bug. The lesson generalizes: an implausibly good result in a well-studied, efficient domain is usually a leak, not a breakthrough.</p>
     </div>
   </section>
@@ -147,6 +147,6 @@
 
 </main>
 
-<script src="app.js?v=2026-10-28.3"></script>
+<script src="app.js?v=2026-11-23.1"></script>
 </body>
 </html>

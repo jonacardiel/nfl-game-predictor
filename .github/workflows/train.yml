@@ -32,4 +32,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add models/
           git diff --cached --quiet && echo "No changes to commit." || git commit -m "Retrain models [automated]"
+          # Someone may have pushed while this ran; replay on top instead of failing the push.
+          git pull --rebase
           git push

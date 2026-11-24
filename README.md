@@ -43,15 +43,15 @@ Re-running this as of every week of the season produces the **Road to Lombardi**
 
 | Season | Win accuracy | ATS accuracy |
 |---|---|---|
-| 2019 | 59.4% | 50.8% |
-| 2020 | 62.1% | 48.8% |
-| 2021 | 61.4% | 51.5% |
-| 2022 | 62.7% | 51.7% |
-| 2023 | 62.5% | 47.7% |
-| 2024 | 68.8% | 53.0% |
-| 2025 | 59.6% | 49.1% |
+| 2019 | 59.2% | 50.0% |
+| 2020 | 62.4% | 49.6% |
+| 2021 | 61.6% | 51.5% |
+| 2022 | 62.8% | 52.5% |
+| 2023 | 62.5% | 47.3% |
+| 2024 | 68.8% | 51.9% |
+| 2025 | 59.4% | 46.9% |
 
-Straight-up win accuracy consistently beats a coin flip. **ATS accuracy sits right at ~50%** across every season — which is the expected, correct result. The closing spread already prices in almost everything a five-feature model can see; beating the market consistently would be the surprising outcome, not this.
+Straight-up win accuracy consistently beats a coin flip. **ATS accuracy sits right at ~50%** across every season (graded on the exact pick the site shows: margin model vs. the line) — which is the expected, correct result. The closing spread already prices in almost everything a five-feature model can see; beating the market consistently would be the surprising outcome, not this.
 
 ![Walk-forward backtest accuracy by season](output/backtest_by_season.png)
 
@@ -65,7 +65,7 @@ Early in development, the ATS label formula used `-spread_line` instead of `spre
 
 ## Tech stack
 
-Python · pandas · scikit-learn · seaborn/matplotlib (offline evaluation plots) · [`nflreadpy`](https://github.com/nflverse/nflreadpy) · GitHub Actions (scheduled inference) · GitHub Pages (static site, vanilla HTML/CSS/JS, no framework)
+Python · pandas · scikit-learn · matplotlib (offline evaluation plots) · [`nflreadpy`](https://github.com/nflverse/nflreadpy) · GitHub Actions (scheduled inference) · GitHub Pages (static site, vanilla HTML/CSS/JS, no framework)
 
 ## Repo structure
 
@@ -78,7 +78,7 @@ nfl_predictor/          Core package
   predict_core.py           shared prediction logic (used by predict.py and export_web.py)
   web.py                    current-week detection + live season scorecard
   season_sim.py             Monte Carlo season + playoff simulation (Road to Lombardi, bracket)
-  report.py                 seaborn plots + console table formatter
+  report.py                 matplotlib plots + console table formatter
 train.py                Trains all 3 models on the last 10 completed seasons, backtests, saves artifacts
 predict.py               CLI: predictions for one week, printed + saved to CSV
 export_web.py            Writes docs/data/*.json for the website

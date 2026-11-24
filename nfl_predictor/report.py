@@ -1,4 +1,4 @@
-"""Seaborn/matplotlib evaluation plots and the console prediction table."""
+"""Matplotlib evaluation plots and the console prediction table."""
 from __future__ import annotations
 
 from pathlib import Path
@@ -8,9 +8,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
-import seaborn as sns
 from sklearn.calibration import calibration_curve
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay
 
 from nfl_predictor.features import FEATURE_COLS
 from nfl_predictor.model import ATS_FEATURE_COLS
@@ -18,14 +17,14 @@ from nfl_predictor.model import ATS_FEATURE_COLS
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-sns.set_theme(style="whitegrid")
+plt.rcParams["axes.grid"] = True
 
 
 def _coef_plot(pipeline, feature_names: list[str], title: str, filename: str) -> None:
     coefs = pipeline.named_steps["clf"].coef_[0]
     df = pd.DataFrame({"feature": feature_names, "coefficient": coefs}).sort_values("coefficient")
     plt.figure(figsize=(8, 5))
-    sns.barplot(data=df, x="coefficient", y="feature", hue="feature", palette="vlag", legend=False)
+    plt.barh(df["feature"], df["coefficient"], color=["#c0504d" if c < 0 else "#4f81bd" for c in df["coefficient"]])
     plt.axvline(0, color="black", linewidth=0.8)
     plt.title(title)
     plt.tight_layout()
@@ -48,9 +47,8 @@ def _calibration_plot(y_true, y_proba, title: str, filename: str) -> None:
 
 
 def _confusion_plot(y_true, y_pred, title: str, filename: str) -> None:
-    cm = confusion_matrix(y_true, y_pred)
-    plt.figure(figsize=(5, 4))
-    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=["Pred 0", "Pred 1"], yticklabels=["True 0", "True 1"])
+    ConfusionMatrixDisplay.from_predictions(y_true, y_pred, cmap="Blues", colorbar=False)
+    plt.grid(False)
     plt.title(title)
     plt.tight_layout()
     plt.savefig(OUTPUT_DIR / filename)
@@ -74,9 +72,7 @@ def save_evaluation_plots(holdout_models, holdout_games: pd.DataFrame, backtest_
         _confusion_plot(ats_games["home_cover"], ats_pred, f"ATS model confusion matrix — {holdout_season} holdout", "ats_confusion.png")
 
     if not backtest_df.empty:
-        melted = backtest_df.melt(id_vars="season", value_vars=["win_accuracy", "ats_accuracy"], var_name="metric", value_name="accuracy")
-        plt.figure(figsize=(9, 5))
-        sns.barplot(data=melted, x="season", y="accuracy", hue="metric")
+        backtest_df.set_index("season")[["win_accuracy", "ats_accuracy"]].plot.bar(figsize=(9, 5), rot=0)
         plt.axhline(0.5, linestyle="--", color="grey")
         plt.ylim(0, 1)
         plt.title("Walk-forward backtest accuracy by season")

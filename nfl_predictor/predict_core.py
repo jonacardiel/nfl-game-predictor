@@ -25,20 +25,17 @@ def load_raw_inputs(season: int, refresh: bool = True) -> tuple[pd.DataFrame, pd
     return pbp, schedules, trades
 
 
-def load_features_for_season(season: int) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Build game-level features for `season`; returns (games, schedules)."""
+def load_features_for_season(season: int) -> pd.DataFrame:
+    """Download fresh data and build game-level features for `season` (and the one before)."""
     pbp, schedules, trades = load_raw_inputs(season)
     team_week = features.build_team_week_features(pbp, trades, schedules)
-    games = features.build_game_features(team_week, schedules)
-    return games, schedules
+    return features.build_game_features(team_week, schedules)
 
 
-def predict_week(models: model.Models, season: int, week: int) -> pd.DataFrame:
-    """Return the prediction table for one week, sorted by home win
-    probability descending. Raises SystemExit with a clear message if the
-    week has no REG games or features can't be computed."""
-    games, _schedules = load_features_for_season(season)
-
+def predict_week(models: model.Models, games: pd.DataFrame, season: int, week: int) -> pd.DataFrame:
+    """Return the prediction table for one week of `games` (from load_features_for_season),
+    sorted by home win probability descending. Raises SystemExit with a clear message if
+    the week has no REG games or features can't be computed."""
     target = games[
         (games["season"] == season) & (games["week"] == week) & (games["game_type"] == "REG")
     ].copy()

@@ -4,7 +4,8 @@ self-contained (no hotlinking a third-party CDN that could reorganize).
 Resized to 96x96 — the site only ever displays them at ~28px, so ESPN's
 500px originals are pure dead weight (roughly 1.6MB vs ~150KB resized).
 
-Usage:
+Usage (one-off, so its extra packages aren't in requirements.txt):
+    pip install Pillow requests
     python scripts/fetch_logos.py
 """
 from __future__ import annotations
